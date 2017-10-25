@@ -1,6 +1,4 @@
-# GoldDigger
-My first android mobile game, requires Android Studio to open.
-
+# CarGame
 License applies only to my code. 
 
 Images were taken from the internet and are in no means used for commercial purposes! I don't claim that I made them and images still preserve their original watermark if they had one.
