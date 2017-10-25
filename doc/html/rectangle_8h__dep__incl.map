@@ -1,0 +1,9 @@
+<map id="include/rectangle.h" name="include/rectangle.h">
+<area shape="rect" id="node2" href="$checkpoint_8h.html" title="include/checkpoint.h" alt="" coords="5,80,147,107"/>
+<area shape="rect" id="node4" href="$collision_8h.html" title="include/collision.h" alt="" coords="171,80,296,107"/>
+<area shape="rect" id="node5" href="$player_8h.html" title="include/player.h" alt="" coords="321,80,434,107"/>
+<area shape="rect" id="node6" href="$wall_8h.html" title="include/wall.h" alt="" coords="458,80,558,107"/>
+<area shape="rect" id="node7" href="$rectangle_trigger_8h.html" title="include/rectangleTrigger.h" alt="" coords="583,80,753,107"/>
+<area shape="rect" id="node8" href="$static_car_8h.html" title="include/staticCar.h" alt="" coords="777,80,908,107"/>
+<area shape="rect" id="node3" href="$game_8h.html" title="include/game.h" alt="" coords="387,155,498,181"/>
+</map>

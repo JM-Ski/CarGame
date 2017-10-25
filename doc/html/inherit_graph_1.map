@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$class_circle.html" title="This class is used to create an abstract base class of the circle. " alt="" coords="145,31,200,57"/>
+<area shape="rect" id="node3" href="$class_sphere_trigger.html" title="This class is used to create a trigger. " alt="" coords="248,5,351,32"/>
+<area shape="rect" id="node4" href="$class_tire.html" title="This class is used to construct a tire. " alt="" coords="278,56,321,83"/>
+</map>

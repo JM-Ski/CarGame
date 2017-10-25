@@ -1,0 +1,107 @@
+\hypertarget{class_texture_loader}{}\section{Texture\+Loader Class Reference}
+\label{class_texture_loader}\index{Texture\+Loader@{Texture\+Loader}}
+
+
+This class is used to manage textures.  
+
+
+
+
+{\ttfamily \#include $<$texture\+Loader.\+h$>$}
+
+
+
+Collaboration diagram for Texture\+Loader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_texture_loader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_texture_loader_aafa6ca3bdbee3874a73aafae39d5c804}{Texture\+Loader} ()
+\item 
+void \hyperlink{class_texture_loader_a08f49a4b5cd9e0d5f84064de749b3eaf}{set\+Base\+Directory} (std\+::string dir)
+\item 
+void \hyperlink{class_texture_loader_a44ce52ccffb88baa49ba8128cc792ffc}{load} (std\+::vector$<$ std\+::string $>$ file\+Names)
+\item 
+sf\+::\+Texture \& \hyperlink{class_texture_loader_abfcc36c51b8d6a493040e01ed84f6bfc}{get\+Texture} (int f\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ sf\+::\+Texture $>$ \hyperlink{class_texture_loader_ad4e7dba3bb89484d7c92b702423cfc77}{textures}
+\item 
+std\+::string \hyperlink{class_texture_loader_acd647e9e5e5ca9b1ba8b3e6ef0aa9d84}{base\+Directory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to manage textures. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Texture\+Loader@{Texture\+Loader}!Texture\+Loader@{Texture\+Loader}}
+\index{Texture\+Loader@{Texture\+Loader}!Texture\+Loader@{Texture\+Loader}}
+\subsubsection[{\texorpdfstring{Texture\+Loader()}{TextureLoader()}}]{\setlength{\rightskip}{0pt plus 5cm}Texture\+Loader\+::\+Texture\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_loader_aafa6ca3bdbee3874a73aafae39d5c804}{}\label{class_texture_loader_aafa6ca3bdbee3874a73aafae39d5c804}
+Initializer. 
+
+\subsection{Member Function Documentation}
+\index{Texture\+Loader@{Texture\+Loader}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!Texture\+Loader@{Texture\+Loader}}
+\subsubsection[{\texorpdfstring{get\+Texture(int f\+Index)}{getTexture(int fIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Texture\& Texture\+Loader\+::get\+Texture (
+\begin{DoxyParamCaption}
+\item[{int}]{f\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_loader_abfcc36c51b8d6a493040e01ed84f6bfc}{}\label{class_texture_loader_abfcc36c51b8d6a493040e01ed84f6bfc}
+Returns texture with said index. 
+\begin{DoxyParams}{Parameters}
+{\em f\+Index} & = Index of the texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$it = Retruns pointer to the texture with matching index. 
+\end{DoxyReturn}
+\index{Texture\+Loader@{Texture\+Loader}!load@{load}}
+\index{load@{load}!Texture\+Loader@{Texture\+Loader}}
+\subsubsection[{\texorpdfstring{load(std\+::vector$<$ std\+::string $>$ file\+Names)}{load(std::vector< std::string > fileNames)}}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+Loader\+::load (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{file\+Names}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_loader_a44ce52ccffb88baa49ba8128cc792ffc}{}\label{class_texture_loader_a44ce52ccffb88baa49ba8128cc792ffc}
+Loads textures based on the string input. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Names} & = String vector with file names. \\
+\hline
+\end{DoxyParams}
+\index{Texture\+Loader@{Texture\+Loader}!set\+Base\+Directory@{set\+Base\+Directory}}
+\index{set\+Base\+Directory@{set\+Base\+Directory}!Texture\+Loader@{Texture\+Loader}}
+\subsubsection[{\texorpdfstring{set\+Base\+Directory(std\+::string dir)}{setBaseDirectory(std::string dir)}}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+Loader\+::set\+Base\+Directory (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{dir}
+\end{DoxyParamCaption}
+)}\hypertarget{class_texture_loader_a08f49a4b5cd9e0d5f84064de749b3eaf}{}\label{class_texture_loader_a08f49a4b5cd9e0d5f84064de749b3eaf}
+Sets our base directory. 
+\begin{DoxyParams}{Parameters}
+{\em dir} & = Our base directory. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Texture\+Loader@{Texture\+Loader}!base\+Directory@{base\+Directory}}
+\index{base\+Directory@{base\+Directory}!Texture\+Loader@{Texture\+Loader}}
+\subsubsection[{\texorpdfstring{base\+Directory}{baseDirectory}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Texture\+Loader\+::base\+Directory\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_texture_loader_acd647e9e5e5ca9b1ba8b3e6ef0aa9d84}{}\label{class_texture_loader_acd647e9e5e5ca9b1ba8b3e6ef0aa9d84}
+Our base directory with textures. \index{Texture\+Loader@{Texture\+Loader}!textures@{textures}}
+\index{textures@{textures}!Texture\+Loader@{Texture\+Loader}}
+\subsubsection[{\texorpdfstring{textures}{textures}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Texture$>$ Texture\+Loader\+::textures\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_texture_loader_ad4e7dba3bb89484d7c92b702423cfc77}{}\label{class_texture_loader_ad4e7dba3bb89484d7c92b702423cfc77}
+Vector of textures. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{texture_loader_8h}{texture\+Loader.\+h}\end{DoxyCompactItemize}

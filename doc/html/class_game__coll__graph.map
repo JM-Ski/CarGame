@@ -1,0 +1,11 @@
+<map id="Game" name="Game">
+<area shape="rect" id="node3" href="$class_font_loader.html" title="This class is used to manage fonts. " alt="" coords="123,1140,266,1276"/>
+<area shape="rect" id="node4" href="$class_collision.html" title="This class is used to do collision tests. " alt="" coords="396,731,585,1072"/>
+<area shape="rect" id="node5" href="$class_vector_maths.html" title="This class is used to do simple vector calculations. " alt="" coords="397,5,560,273"/>
+<area shape="rect" id="node11" href="$class_physics.html" title="This class is used to create a simulation of movement. " alt="" coords="521,336,668,707"/>
+<area shape="rect" id="node6" href="$class_audio_loader.html" title="This class is used to manage audio. " alt="" coords="869,1118,1011,1298"/>
+<area shape="rect" id="node7" href="$class_texture_loader.html" title="This class is used to manage textures. " alt="" coords="1035,1140,1178,1276"/>
+<area shape="rect" id="node8" href="$class_player.html" title="This class is used to create and control a player. " alt="" coords="543,1096,681,1320"/>
+<area shape="rect" id="node9" href="$class_rectangle.html" title="This class is used to create an abstract base class of the rectangle. " alt="" coords="692,402,857,641"/>
+<area shape="rect" id="node12" href="$class_rectangle_trigger.html" title="This class is used to create a trigger. " alt="" coords="705,1155,844,1261"/>
+</map>

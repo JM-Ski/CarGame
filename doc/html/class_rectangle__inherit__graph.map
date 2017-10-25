@@ -1,0 +1,7 @@
+<map id="Rectangle" name="Rectangle">
+<area shape="rect" id="node3" href="$class_checkpoint.html" title="This class is used to do create a simple checkpoint. " alt="" coords="5,491,112,583"/>
+<area shape="rect" id="node4" href="$class_player.html" title="This class is used to create and control a player. " alt="" coords="137,417,274,656"/>
+<area shape="rect" id="node5" href="$class_rectangle_trigger.html" title="This class is used to create a trigger. " alt="" coords="299,483,437,590"/>
+<area shape="rect" id="node6" href="$class_static_car.html" title="This class is used to create immovable cars. " alt="" coords="461,491,557,583"/>
+<area shape="rect" id="node7" href="$class_wall.html" title="This class is used to construct a wall. " alt="" coords="582,491,650,583"/>
+</map>

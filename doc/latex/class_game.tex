@@ -1,0 +1,327 @@
+\hypertarget{class_game}{}\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+This class is used to create a game window.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+
+
+Inheritance diagram for Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_game__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game} ()
+\item 
+void \hyperlink{class_game_a92a5eb842e5b304e89dc2caf530f7a6d}{update} (float time\+Step)
+\item 
+void \hyperlink{class_game_a43337462c32106b3374a86a12a242ba0}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const 
+\item 
+void \hyperlink{class_game_a53c3821c70ba6acb541bdbefac8d037c}{process\+Event} (sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)
+\item 
+void \hyperlink{class_game_a04598b31d30614a0eda08dd8b3dcecb9}{collision\+Detection} ()
+\item 
+void \hyperlink{class_game_aea043c436651fa28343224e1e51c9e24}{left\+B\+HV} ()
+\item 
+void \hyperlink{class_game_a69f84b7c0e4565c690b22eb195937a00}{right\+B\+HV} ()
+\item 
+void \hyperlink{class_game_aa6b8153a760fbf3cef5e30157be3ee45}{top\+B\+HV} ()
+\item 
+void \hyperlink{class_game_ab974c9d1736297e36b8b91e3faaee637}{bottom\+B\+HV} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State} \{ \hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04afa4424e746d7d1082d6e27c4811f3984}{Start}, 
+\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04afc89c8495fe7b84c06560b6aa6195bbf}{Reset}, 
+\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04ac5a0d20c5cb7b20c0f6cca50edeed64f}{Playing}, 
+\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04ab2cf7098808338abae856bf46ac82b91}{Pause}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector_maths}{Vector\+Maths} \hyperlink{class_game_a2f535f85fe3b454b9c708993753f4ecc}{m\+\_\+vect\+Maths}
+\item 
+std\+::array$<$ \hyperlink{class_view}{View}, 3 $>$ \hyperlink{class_game_a36d2bed14974b11445cb7a4da0256adf}{m\+\_\+a\+View}
+\item 
+\hyperlink{class_collision}{Collision} \hyperlink{class_game_ac35fe5a8537b15105621229bdfa0e282}{m\+\_\+col}
+\item 
+\hyperlink{class_player}{Player} \hyperlink{class_game_ad1f796902ca353bad4c877939e0005e7}{m\+\_\+player}
+\item 
+\hyperlink{class_rectangle_trigger}{Rectangle\+Trigger} \hyperlink{class_game_a007f25af28324cc117c00239be5c167b}{m\+\_\+player\+Trigger}
+\item 
+std\+::array$<$ \hyperlink{class_rectangle_trigger}{Rectangle\+Trigger}, 11 $>$ \hyperlink{class_game_a2065f8dee8f173a73ef904525ab6823e}{m\+\_\+a\+Rect\+Trigger}
+\item 
+std\+::array$<$ \hyperlink{class_image}{Image}, 3 $>$ \hyperlink{class_game_a5025f591142de524119d0dcc99300d3b}{m\+\_\+a\+Image}
+\item 
+std\+::array$<$ \hyperlink{class_wall}{Wall}, 2 $>$ \hyperlink{class_game_a3baabf1657a540fb01d7c256829f4221}{m\+\_\+a\+Wall}
+\item 
+std\+::array$<$ \hyperlink{class_tire}{Tire}, 17 $>$ \hyperlink{class_game_a3b92928693ffa8c38f8e11c032990def}{m\+\_\+a\+Top\+Tire}
+\item 
+std\+::array$<$ \hyperlink{class_tire}{Tire}, 17 $>$ \hyperlink{class_game_a15992ccedd036df35c2e8c14b70676ef}{m\+\_\+a\+Bottom\+Tire}
+\item 
+std\+::array$<$ \hyperlink{class_checkpoint}{Checkpoint}, 4 $>$ \hyperlink{class_game_ade427c88bcff6dd2e4b7e78a6db93f04}{m\+\_\+a\+Checkpoint}
+\item 
+std\+::array$<$ \hyperlink{class_static_car}{Static\+Car}, 3 $>$ \hyperlink{class_game_a664151ff15f6aaecc56b1c35e7fb05df}{m\+\_\+a\+Left\+Static\+Car}
+\item 
+std\+::array$<$ \hyperlink{class_static_car}{Static\+Car}, 3 $>$ \hyperlink{class_game_a53199784b896c76c8b6fc7663f92b334}{m\+\_\+a\+Right\+Static\+Car}
+\item 
+std\+::array$<$ \hyperlink{class_static_car}{Static\+Car}, 2 $>$ \hyperlink{class_game_ac8205b8f1930f12fd4fdd71ab575bbdf}{m\+\_\+a\+Top\+Static\+Car}
+\item 
+std\+::array$<$ \hyperlink{class_static_car}{Static\+Car}, 2 $>$ \hyperlink{class_game_a0af48a2f04c50bfcb3d961dbd1a48332}{m\+\_\+a\+Bottom\+Static\+Car}
+\item 
+std\+::array$<$ sf\+::\+Sound, 1 $>$ \hyperlink{class_game_a9bbec66f60fb732629222dd90ba62778}{m\+\_\+a\+Sound}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_game_afd0a84adb730239bae2eed9a8eded08e}{s\+File\+Name\+Texture}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_game_a4989e4e035912a6cd8d00c8b2e627b43}{s\+File\+Name\+Font}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_game_ad6b42e850d075a49c003f32fba1a2dd1}{s\+File\+Name\+Music}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_game_a4bff69d4d76477050669e7f10d8d1da8}{s\+File\+Name\+Sound}
+\item 
+\hyperlink{class_texture_loader}{Texture\+Loader} \hyperlink{class_game_a361590f1fa6617f110b614b232b00631}{m\+\_\+texture\+Loader}
+\item 
+\hyperlink{class_font_loader}{Font\+Loader} \hyperlink{class_game_aa9d87d7d97d1651a68cc0301861e86e3}{m\+\_\+font\+Loader}
+\item 
+\hyperlink{class_audio_loader}{Audio\+Loader} \hyperlink{class_game_a4012ccf746dc592aff5ede39df9e2b17}{m\+\_\+audio\+Loader}
+\item 
+std\+::array$<$ \hyperlink{class_simple_text}{Simple\+Text}, 4 $>$ \hyperlink{class_game_a8a9e4f882c541075d13cad25ea2aec08}{m\+\_\+a\+Text}
+\item 
+sf\+::\+Clock \hyperlink{class_game_afa2b2cd71f1808971458e67a8540a83d}{m\+\_\+clock}
+\item 
+int \hyperlink{class_game_a377116aa9d1b98c95fc42f593bfefc33}{i\+Time}
+\item 
+int \hyperlink{class_game_a67d656a5608c3cd5cd3df69932bb16fb}{i\+Lap}
+\item 
+bool \hyperlink{class_game_a7eda5a4db623fc9e05fad674c9b9e6bb}{b\+Lap\+Confirm} \mbox{[}4\mbox{]}
+\item 
+\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State} \hyperlink{class_game_ae0322dfc4abedec88046d09ca3460f35}{e\+Current\+State}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to create a game window. 
+
+\subsection{Member Enumeration Documentation}
+\index{Game@{Game}!Game\+State@{Game\+State}}
+\index{Game\+State@{Game\+State}!Game@{Game}}
+\subsubsection[{\texorpdfstring{Game\+State}{GameState}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Game\+::\+Game\+State}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04}{}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04}
+\hyperlink{class_game}{Game} states. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Start@{Start}!Game@{Game}}\index{Game@{Game}!Start@{Start}}\item[{\em 
+Start\hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04afa4424e746d7d1082d6e27c4811f3984}{}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04afa4424e746d7d1082d6e27c4811f3984}
+}]Start = We are starting the game. \index{Reset@{Reset}!Game@{Game}}\index{Game@{Game}!Reset@{Reset}}\item[{\em 
+Reset\hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04afc89c8495fe7b84c06560b6aa6195bbf}{}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04afc89c8495fe7b84c06560b6aa6195bbf}
+}]Reset = We are resetting game variables. \index{Playing@{Playing}!Game@{Game}}\index{Game@{Game}!Playing@{Playing}}\item[{\em 
+Playing\hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04ac5a0d20c5cb7b20c0f6cca50edeed64f}{}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04ac5a0d20c5cb7b20c0f6cca50edeed64f}
+}]Playing = We are playing the game. \index{Pause@{Pause}!Game@{Game}}\index{Game@{Game}!Pause@{Pause}}\item[{\em 
+Pause\hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04ab2cf7098808338abae856bf46ac82b91}{}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04ab2cf7098808338abae856bf46ac82b91}
+}]Pause = \hyperlink{class_player}{Player} has finished the game. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection[{\texorpdfstring{Game()}{Game()}}]{\setlength{\rightskip}{0pt plus 5cm}Game\+::\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}{}\label{class_game_ad59df6562a58a614fda24622d3715b65}
+An initializer. 
+
+\subsection{Member Function Documentation}
+\index{Game@{Game}!bottom\+B\+HV@{bottom\+B\+HV}}
+\index{bottom\+B\+HV@{bottom\+B\+HV}!Game@{Game}}
+\subsubsection[{\texorpdfstring{bottom\+B\+H\+V()}{bottomBHV()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::bottom\+B\+HV (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_ab974c9d1736297e36b8b91e3faaee637}{}\label{class_game_ab974c9d1736297e36b8b91e3faaee637}
+Bounding Volume Hierarchies -\/ Bottom. \index{Game@{Game}!collision\+Detection@{collision\+Detection}}
+\index{collision\+Detection@{collision\+Detection}!Game@{Game}}
+\subsubsection[{\texorpdfstring{collision\+Detection()}{collisionDetection()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::collision\+Detection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_a04598b31d30614a0eda08dd8b3dcecb9}{}\label{class_game_a04598b31d30614a0eda08dd8b3dcecb9}
+All collision detection is done in here. \index{Game@{Game}!draw@{draw}}
+\index{draw@{draw}!Game@{Game}}
+\subsubsection[{\texorpdfstring{draw(sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const }{draw(sf::RenderTarget &target, sf::RenderStates states) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::draw (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Target \&}]{target, }
+\item[{sf\+::\+Render\+States}]{states}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_game_a43337462c32106b3374a86a12a242ba0}{}\label{class_game_a43337462c32106b3374a86a12a242ba0}
+Drawing objects. 
+\begin{DoxyParams}{Parameters}
+{\em target} & = Render target to draw to. \\
+\hline
+{\em states} & = Current render states. \\
+\hline
+\end{DoxyParams}
+\index{Game@{Game}!left\+B\+HV@{left\+B\+HV}}
+\index{left\+B\+HV@{left\+B\+HV}!Game@{Game}}
+\subsubsection[{\texorpdfstring{left\+B\+H\+V()}{leftBHV()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::left\+B\+HV (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_aea043c436651fa28343224e1e51c9e24}{}\label{class_game_aea043c436651fa28343224e1e51c9e24}
+Bounding Volume Hierarchies -\/ Left side. \index{Game@{Game}!process\+Event@{process\+Event}}
+\index{process\+Event@{process\+Event}!Game@{Game}}
+\subsubsection[{\texorpdfstring{process\+Event(sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)}{processEvent(sf::Event &e, sf::RenderWindow &window)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::process\+Event (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Event \&}]{e, }
+\item[{sf\+::\+Render\+Window \&}]{window}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_a53c3821c70ba6acb541bdbefac8d037c}{}\label{class_game_a53c3821c70ba6acb541bdbefac8d037c}
+Process any key events. 
+\begin{DoxyParams}{Parameters}
+{\em e} & = Event variable needed to capture any key presses. \\
+\hline
+{\em window} & = Takes a window variable so that we can process events to it \\
+\hline
+\end{DoxyParams}
+\index{Game@{Game}!right\+B\+HV@{right\+B\+HV}}
+\index{right\+B\+HV@{right\+B\+HV}!Game@{Game}}
+\subsubsection[{\texorpdfstring{right\+B\+H\+V()}{rightBHV()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::right\+B\+HV (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_a69f84b7c0e4565c690b22eb195937a00}{}\label{class_game_a69f84b7c0e4565c690b22eb195937a00}
+Bounding Volume Hierarchies -\/ Right side. \index{Game@{Game}!top\+B\+HV@{top\+B\+HV}}
+\index{top\+B\+HV@{top\+B\+HV}!Game@{Game}}
+\subsubsection[{\texorpdfstring{top\+B\+H\+V()}{topBHV()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::top\+B\+HV (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_aa6b8153a760fbf3cef5e30157be3ee45}{}\label{class_game_aa6b8153a760fbf3cef5e30157be3ee45}
+Bounding Volume Hierarchies -\/ Top. \index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\subsubsection[{\texorpdfstring{update(float time\+Step)}{update(float timeStep)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{time\+Step}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_a92a5eb842e5b304e89dc2caf530f7a6d}{}\label{class_game_a92a5eb842e5b304e89dc2caf530f7a6d}
+\hyperlink{class_game}{Game} update. 
+\begin{DoxyParams}{Parameters}
+{\em time\+Step} & = Time which updates most of the functions and variables, for example velocity. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Game@{Game}!b\+Lap\+Confirm@{b\+Lap\+Confirm}}
+\index{b\+Lap\+Confirm@{b\+Lap\+Confirm}!Game@{Game}}
+\subsubsection[{\texorpdfstring{b\+Lap\+Confirm}{bLapConfirm}}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+::b\+Lap\+Confirm\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a7eda5a4db623fc9e05fad674c9b9e6bb}{}\label{class_game_a7eda5a4db623fc9e05fad674c9b9e6bb}
+Lap confirmation. \index{Game@{Game}!e\+Current\+State@{e\+Current\+State}}
+\index{e\+Current\+State@{e\+Current\+State}!Game@{Game}}
+\subsubsection[{\texorpdfstring{e\+Current\+State}{eCurrentState}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\+State} Game\+::e\+Current\+State\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_ae0322dfc4abedec88046d09ca3460f35}{}\label{class_game_ae0322dfc4abedec88046d09ca3460f35}
+\index{Game@{Game}!i\+Lap@{i\+Lap}}
+\index{i\+Lap@{i\+Lap}!Game@{Game}}
+\subsubsection[{\texorpdfstring{i\+Lap}{iLap}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+::i\+Lap\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a67d656a5608c3cd5cd3df69932bb16fb}{}\label{class_game_a67d656a5608c3cd5cd3df69932bb16fb}
+Lap counter. \index{Game@{Game}!i\+Time@{i\+Time}}
+\index{i\+Time@{i\+Time}!Game@{Game}}
+\subsubsection[{\texorpdfstring{i\+Time}{iTime}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+::i\+Time\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a377116aa9d1b98c95fc42f593bfefc33}{}\label{class_game_a377116aa9d1b98c95fc42f593bfefc33}
+Time tracker. \index{Game@{Game}!m\+\_\+a\+Bottom\+Static\+Car@{m\+\_\+a\+Bottom\+Static\+Car}}
+\index{m\+\_\+a\+Bottom\+Static\+Car@{m\+\_\+a\+Bottom\+Static\+Car}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Bottom\+Static\+Car}{m_aBottomStaticCar}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Static\+Car}, 2$>$ Game\+::m\+\_\+a\+Bottom\+Static\+Car\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a0af48a2f04c50bfcb3d961dbd1a48332}{}\label{class_game_a0af48a2f04c50bfcb3d961dbd1a48332}
+An array of cars positioned on the top. \index{Game@{Game}!m\+\_\+a\+Bottom\+Tire@{m\+\_\+a\+Bottom\+Tire}}
+\index{m\+\_\+a\+Bottom\+Tire@{m\+\_\+a\+Bottom\+Tire}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Bottom\+Tire}{m_aBottomTire}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Tire}, 17$>$ Game\+::m\+\_\+a\+Bottom\+Tire\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a15992ccedd036df35c2e8c14b70676ef}{}\label{class_game_a15992ccedd036df35c2e8c14b70676ef}
+An array of tires positioned at the bottom of the screen. \index{Game@{Game}!m\+\_\+a\+Checkpoint@{m\+\_\+a\+Checkpoint}}
+\index{m\+\_\+a\+Checkpoint@{m\+\_\+a\+Checkpoint}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Checkpoint}{m_aCheckpoint}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Checkpoint}, 4$>$ Game\+::m\+\_\+a\+Checkpoint\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_ade427c88bcff6dd2e4b7e78a6db93f04}{}\label{class_game_ade427c88bcff6dd2e4b7e78a6db93f04}
+An array of checkpoints positioned in the world. \index{Game@{Game}!m\+\_\+a\+Image@{m\+\_\+a\+Image}}
+\index{m\+\_\+a\+Image@{m\+\_\+a\+Image}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Image}{m_aImage}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Image}, 3$>$ Game\+::m\+\_\+a\+Image\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a5025f591142de524119d0dcc99300d3b}{}\label{class_game_a5025f591142de524119d0dcc99300d3b}
+An array of images \index{Game@{Game}!m\+\_\+a\+Left\+Static\+Car@{m\+\_\+a\+Left\+Static\+Car}}
+\index{m\+\_\+a\+Left\+Static\+Car@{m\+\_\+a\+Left\+Static\+Car}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Left\+Static\+Car}{m_aLeftStaticCar}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Static\+Car}, 3$>$ Game\+::m\+\_\+a\+Left\+Static\+Car\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a664151ff15f6aaecc56b1c35e7fb05df}{}\label{class_game_a664151ff15f6aaecc56b1c35e7fb05df}
+An array of cars positioned on the left. \index{Game@{Game}!m\+\_\+a\+Rect\+Trigger@{m\+\_\+a\+Rect\+Trigger}}
+\index{m\+\_\+a\+Rect\+Trigger@{m\+\_\+a\+Rect\+Trigger}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Rect\+Trigger}{m_aRectTrigger}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Rectangle\+Trigger}, 11$>$ Game\+::m\+\_\+a\+Rect\+Trigger\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a2065f8dee8f173a73ef904525ab6823e}{}\label{class_game_a2065f8dee8f173a73ef904525ab6823e}
+An array of rectangle triggers for the objects \index{Game@{Game}!m\+\_\+a\+Right\+Static\+Car@{m\+\_\+a\+Right\+Static\+Car}}
+\index{m\+\_\+a\+Right\+Static\+Car@{m\+\_\+a\+Right\+Static\+Car}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Right\+Static\+Car}{m_aRightStaticCar}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Static\+Car}, 3$>$ Game\+::m\+\_\+a\+Right\+Static\+Car\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a53199784b896c76c8b6fc7663f92b334}{}\label{class_game_a53199784b896c76c8b6fc7663f92b334}
+An array of cars positioned on the right. \index{Game@{Game}!m\+\_\+a\+Sound@{m\+\_\+a\+Sound}}
+\index{m\+\_\+a\+Sound@{m\+\_\+a\+Sound}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Sound}{m_aSound}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<$sf\+::\+Sound, 1$>$ Game\+::m\+\_\+a\+Sound\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a9bbec66f60fb732629222dd90ba62778}{}\label{class_game_a9bbec66f60fb732629222dd90ba62778}
+An array of sounds. \index{Game@{Game}!m\+\_\+a\+Text@{m\+\_\+a\+Text}}
+\index{m\+\_\+a\+Text@{m\+\_\+a\+Text}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Text}{m_aText}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Simple\+Text}, 4$>$ Game\+::m\+\_\+a\+Text\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a8a9e4f882c541075d13cad25ea2aec08}{}\label{class_game_a8a9e4f882c541075d13cad25ea2aec08}
+An array of texts. \index{Game@{Game}!m\+\_\+a\+Top\+Static\+Car@{m\+\_\+a\+Top\+Static\+Car}}
+\index{m\+\_\+a\+Top\+Static\+Car@{m\+\_\+a\+Top\+Static\+Car}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Top\+Static\+Car}{m_aTopStaticCar}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Static\+Car}, 2$>$ Game\+::m\+\_\+a\+Top\+Static\+Car\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_ac8205b8f1930f12fd4fdd71ab575bbdf}{}\label{class_game_ac8205b8f1930f12fd4fdd71ab575bbdf}
+An array of cars positioned on the top. \index{Game@{Game}!m\+\_\+a\+Top\+Tire@{m\+\_\+a\+Top\+Tire}}
+\index{m\+\_\+a\+Top\+Tire@{m\+\_\+a\+Top\+Tire}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Top\+Tire}{m_aTopTire}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Tire}, 17$>$ Game\+::m\+\_\+a\+Top\+Tire\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a3b92928693ffa8c38f8e11c032990def}{}\label{class_game_a3b92928693ffa8c38f8e11c032990def}
+An array of tires positioned at the top of the screen. \index{Game@{Game}!m\+\_\+audio\+Loader@{m\+\_\+audio\+Loader}}
+\index{m\+\_\+audio\+Loader@{m\+\_\+audio\+Loader}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+audio\+Loader}{m_audioLoader}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Audio\+Loader} Game\+::m\+\_\+audio\+Loader\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a4012ccf746dc592aff5ede39df9e2b17}{}\label{class_game_a4012ccf746dc592aff5ede39df9e2b17}
+An audio loader. \index{Game@{Game}!m\+\_\+a\+View@{m\+\_\+a\+View}}
+\index{m\+\_\+a\+View@{m\+\_\+a\+View}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+View}{m_aView}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf View}, 3$>$ Game\+::m\+\_\+a\+View\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a36d2bed14974b11445cb7a4da0256adf}{}\label{class_game_a36d2bed14974b11445cb7a4da0256adf}
+An array of views. \index{Game@{Game}!m\+\_\+a\+Wall@{m\+\_\+a\+Wall}}
+\index{m\+\_\+a\+Wall@{m\+\_\+a\+Wall}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+a\+Wall}{m_aWall}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<${\bf Wall}, 2$>$ Game\+::m\+\_\+a\+Wall\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a3baabf1657a540fb01d7c256829f4221}{}\label{class_game_a3baabf1657a540fb01d7c256829f4221}
+An array of walls positioned in the world. \index{Game@{Game}!m\+\_\+clock@{m\+\_\+clock}}
+\index{m\+\_\+clock@{m\+\_\+clock}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+clock}{m_clock}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Clock Game\+::m\+\_\+clock\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_afa2b2cd71f1808971458e67a8540a83d}{}\label{class_game_afa2b2cd71f1808971458e67a8540a83d}
+Clock needed to track the time. \index{Game@{Game}!m\+\_\+col@{m\+\_\+col}}
+\index{m\+\_\+col@{m\+\_\+col}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+col}{m_col}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collision} Game\+::m\+\_\+col\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_ac35fe5a8537b15105621229bdfa0e282}{}\label{class_game_ac35fe5a8537b15105621229bdfa0e282}
+A collision. \index{Game@{Game}!m\+\_\+font\+Loader@{m\+\_\+font\+Loader}}
+\index{m\+\_\+font\+Loader@{m\+\_\+font\+Loader}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+font\+Loader}{m_fontLoader}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Font\+Loader} Game\+::m\+\_\+font\+Loader\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_aa9d87d7d97d1651a68cc0301861e86e3}{}\label{class_game_aa9d87d7d97d1651a68cc0301861e86e3}
+A font loader. \index{Game@{Game}!m\+\_\+player@{m\+\_\+player}}
+\index{m\+\_\+player@{m\+\_\+player}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+player}{m_player}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} Game\+::m\+\_\+player\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_ad1f796902ca353bad4c877939e0005e7}{}\label{class_game_ad1f796902ca353bad4c877939e0005e7}
+A player. \index{Game@{Game}!m\+\_\+player\+Trigger@{m\+\_\+player\+Trigger}}
+\index{m\+\_\+player\+Trigger@{m\+\_\+player\+Trigger}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+player\+Trigger}{m_playerTrigger}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rectangle\+Trigger} Game\+::m\+\_\+player\+Trigger\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a007f25af28324cc117c00239be5c167b}{}\label{class_game_a007f25af28324cc117c00239be5c167b}
+Sphere trigger for the player \index{Game@{Game}!m\+\_\+texture\+Loader@{m\+\_\+texture\+Loader}}
+\index{m\+\_\+texture\+Loader@{m\+\_\+texture\+Loader}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+texture\+Loader}{m_textureLoader}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture\+Loader} Game\+::m\+\_\+texture\+Loader\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a361590f1fa6617f110b614b232b00631}{}\label{class_game_a361590f1fa6617f110b614b232b00631}
+A texture loader. \index{Game@{Game}!m\+\_\+vect\+Maths@{m\+\_\+vect\+Maths}}
+\index{m\+\_\+vect\+Maths@{m\+\_\+vect\+Maths}!Game@{Game}}
+\subsubsection[{\texorpdfstring{m\+\_\+vect\+Maths}{m_vectMaths}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\+Maths} Game\+::m\+\_\+vect\+Maths\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a2f535f85fe3b454b9c708993753f4ecc}{}\label{class_game_a2f535f85fe3b454b9c708993753f4ecc}
+A variable which deals with vector maths. \index{Game@{Game}!s\+File\+Name\+Font@{s\+File\+Name\+Font}}
+\index{s\+File\+Name\+Font@{s\+File\+Name\+Font}!Game@{Game}}
+\subsubsection[{\texorpdfstring{s\+File\+Name\+Font}{sFileNameFont}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Game\+::s\+File\+Name\+Font\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a4989e4e035912a6cd8d00c8b2e627b43}{}\label{class_game_a4989e4e035912a6cd8d00c8b2e627b43}
+A vector of file names with fonts. \index{Game@{Game}!s\+File\+Name\+Music@{s\+File\+Name\+Music}}
+\index{s\+File\+Name\+Music@{s\+File\+Name\+Music}!Game@{Game}}
+\subsubsection[{\texorpdfstring{s\+File\+Name\+Music}{sFileNameMusic}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Game\+::s\+File\+Name\+Music\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_ad6b42e850d075a49c003f32fba1a2dd1}{}\label{class_game_ad6b42e850d075a49c003f32fba1a2dd1}
+A vector of file names with music. \index{Game@{Game}!s\+File\+Name\+Sound@{s\+File\+Name\+Sound}}
+\index{s\+File\+Name\+Sound@{s\+File\+Name\+Sound}!Game@{Game}}
+\subsubsection[{\texorpdfstring{s\+File\+Name\+Sound}{sFileNameSound}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Game\+::s\+File\+Name\+Sound\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_a4bff69d4d76477050669e7f10d8d1da8}{}\label{class_game_a4bff69d4d76477050669e7f10d8d1da8}
+A vector of file names with sound effects. \index{Game@{Game}!s\+File\+Name\+Texture@{s\+File\+Name\+Texture}}
+\index{s\+File\+Name\+Texture@{s\+File\+Name\+Texture}!Game@{Game}}
+\subsubsection[{\texorpdfstring{s\+File\+Name\+Texture}{sFileNameTexture}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Game\+::s\+File\+Name\+Texture\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_game_afd0a84adb730239bae2eed9a8eded08e}{}\label{class_game_afd0a84adb730239bae2eed9a8eded08e}
+A vector of file names with textures. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{game_8h}{game.\+h}\end{DoxyCompactItemize}

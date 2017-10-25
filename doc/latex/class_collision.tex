@@ -1,0 +1,261 @@
+\hypertarget{class_collision}{}\section{Collision Class Reference}
+\label{class_collision}\index{Collision@{Collision}}
+
+
+This class is used to do collision tests.  
+
+
+
+
+{\ttfamily \#include $<$collision.\+h$>$}
+
+
+
+Collaboration diagram for Collision\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_collision__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_collision_aea8004fbf48b79b5db7b784688b23788}{Collision} ()
+\item 
+void \hyperlink{class_collision_a447fe84c543fc402f1779d0771773878}{Update\+Combined\+Normals} (std\+::vector$<$ sf\+::\+Vector2f $>$ \&first, std\+::vector$<$ sf\+::\+Vector2f $>$ \&other)
+\item 
+void \hyperlink{class_collision_acfff38c9712d0671e466daae126eade0}{Check\+Vertices} (sf\+::\+Vertex \&vertex, sf\+::\+Vector2f \&normal, float \&f\+Min, float \&f\+Max)
+\item 
+bool \hyperlink{class_collision_aa449054d324451f054a312479334f006}{Intersects} (\hyperlink{class_rectangle}{Rectangle} \&first\+A\+A\+BB, \hyperlink{class_rectangle}{Rectangle} \&other\+A\+A\+BB, std\+::string s\+A\+A\+BB)
+\item 
+bool \hyperlink{class_collision_afe374ad46bd824d5311a805771d74d4c}{Intersects} (\hyperlink{class_rectangle}{Rectangle} \&first, \hyperlink{class_rectangle}{Rectangle} \&other)
+\item 
+bool \hyperlink{class_collision_a437a8d88145b86b460cd60b432cc3e9e}{Intersects} (\hyperlink{class_rectangle}{Rectangle} \&first, \hyperlink{class_circle}{Circle} \&other)
+\item 
+bool \hyperlink{class_collision_a6bec285cd3ceab74dbbc8c861454a973}{Intersects} (\hyperlink{class_circle}{Circle} \&first, \hyperlink{class_circle}{Circle} \&other)
+\item 
+sf\+::\+Vector2f \hyperlink{class_collision_af6b664b6ea60154584aa0715d7d2633a}{get\+Collision\+Rect\+Normal} ()
+\item 
+sf\+::\+Vector2f \hyperlink{class_collision_a1b186d29f5e80d453219098b317511d3}{get\+Collision\+Circ\+Normal} ()
+\item 
+float \hyperlink{class_collision_a87622ae46722faf9929bcd1b9d1183bd}{get\+Rect\+Overlap} ()
+\item 
+float \hyperlink{class_collision_a955a13843b8a621ec84e4201af14d418}{get\+Circ\+Overlap} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_collision_a80db9ae6bac2cd1f032d8b2c4d7a75c5}{b\+Collision}
+\item 
+bool \hyperlink{class_collision_aa4a00832adce88fe922980cbaf0362a9}{b\+Collision\+Axis\+Test} \mbox{[}4\mbox{]}
+\item 
+sf\+::\+Vector2f \hyperlink{class_collision_a1ccb2e8e575ead01b332a65338bc92fd}{collision\+Rect\+Normal}
+\item 
+sf\+::\+Vector2f \hyperlink{class_collision_aed4ea8e9cafeec9b67713c2948854ee4}{collision\+Circ\+Normal}
+\item 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \hyperlink{class_collision_aa3e126df67a5d939cfc0ec2ebac14cf5}{normals\+Combined}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_collision_a789d44569f105338d670feabc02bc2ce}{overlaps}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{class_collision_ad92247b56bd8dc65526bf9e740baa9d0}{reverse}
+\item 
+float \hyperlink{class_collision_a232bdb17411322d39be3dba8df18fe19}{f\+Rect\+Overlap}
+\item 
+float \hyperlink{class_collision_a35cb18deca301a426db25a00eb2fd504}{f\+Circ\+Overlap}
+\item 
+\hyperlink{class_vector_maths}{Vector\+Maths} \hyperlink{class_collision_affb289a519ea7c61695ab74e11a82b5d}{m\+\_\+vect\+Maths}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to do collision tests. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Collision@{Collision}!Collision@{Collision}}
+\index{Collision@{Collision}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{Collision()}{Collision()}}]{\setlength{\rightskip}{0pt plus 5cm}Collision\+::\+Collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_collision_aea8004fbf48b79b5db7b784688b23788}{}\label{class_collision_aea8004fbf48b79b5db7b784688b23788}
+An initializer. 
+
+\subsection{Member Function Documentation}
+\index{Collision@{Collision}!Check\+Vertices@{Check\+Vertices}}
+\index{Check\+Vertices@{Check\+Vertices}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{Check\+Vertices(sf\+::\+Vertex \&vertex, sf\+::\+Vector2f \&normal, float \&f\+Min, float \&f\+Max)}{CheckVertices(sf::Vertex &vertex, sf::Vector2f &normal, float &fMin, float &fMax)}}]{\setlength{\rightskip}{0pt plus 5cm}void Collision\+::\+Check\+Vertices (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vertex \&}]{vertex, }
+\item[{sf\+::\+Vector2f \&}]{normal, }
+\item[{float \&}]{f\+Min, }
+\item[{float \&}]{f\+Max}
+\end{DoxyParamCaption}
+)}\hypertarget{class_collision_acfff38c9712d0671e466daae126eade0}{}\label{class_collision_acfff38c9712d0671e466daae126eade0}
+Projection of O\+BB rectangle onto axis. 
+\begin{DoxyParams}{Parameters}
+{\em vertex} & = A vertex of the O\+BB rectangle. \\
+\hline
+{\em normal} & = A face normal of the O\+BB rectangle. \\
+\hline
+{\em f\+Min} & = A current minimum of the O\+BB rectangle. \\
+\hline
+{\em f\+Max} & = A current maximum of the O\+BB rectangle. \\
+\hline
+\end{DoxyParams}
+\index{Collision@{Collision}!get\+Circ\+Overlap@{get\+Circ\+Overlap}}
+\index{get\+Circ\+Overlap@{get\+Circ\+Overlap}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{get\+Circ\+Overlap()}{getCircOverlap()}}]{\setlength{\rightskip}{0pt plus 5cm}float Collision\+::get\+Circ\+Overlap (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_collision_a955a13843b8a621ec84e4201af14d418}{}\label{class_collision_a955a13843b8a621ec84e4201af14d418}
+Returns overlap of the circle. \begin{DoxyReturn}{Returns}
+std\+::abs(f\+Circ\+Overlap) = Returns a positive circle overlap. 
+\end{DoxyReturn}
+\index{Collision@{Collision}!get\+Collision\+Circ\+Normal@{get\+Collision\+Circ\+Normal}}
+\index{get\+Collision\+Circ\+Normal@{get\+Collision\+Circ\+Normal}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{get\+Collision\+Circ\+Normal()}{getCollisionCircNormal()}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Collision\+::get\+Collision\+Circ\+Normal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_collision_a1b186d29f5e80d453219098b317511d3}{}\label{class_collision_a1b186d29f5e80d453219098b317511d3}
+Returns collision normal of the circle. \begin{DoxyReturn}{Returns}
+collision\+Circ\+Normal = \hyperlink{class_circle}{Circle} collision normal. 
+\end{DoxyReturn}
+\index{Collision@{Collision}!get\+Collision\+Rect\+Normal@{get\+Collision\+Rect\+Normal}}
+\index{get\+Collision\+Rect\+Normal@{get\+Collision\+Rect\+Normal}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{get\+Collision\+Rect\+Normal()}{getCollisionRectNormal()}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Collision\+::get\+Collision\+Rect\+Normal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_collision_af6b664b6ea60154584aa0715d7d2633a}{}\label{class_collision_af6b664b6ea60154584aa0715d7d2633a}
+Returns collision normal of the rectangle. \begin{DoxyReturn}{Returns}
+collision\+Rect\+Normal = \hyperlink{class_rectangle}{Rectangle} collision normal. 
+\end{DoxyReturn}
+\index{Collision@{Collision}!get\+Rect\+Overlap@{get\+Rect\+Overlap}}
+\index{get\+Rect\+Overlap@{get\+Rect\+Overlap}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{get\+Rect\+Overlap()}{getRectOverlap()}}]{\setlength{\rightskip}{0pt plus 5cm}float Collision\+::get\+Rect\+Overlap (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_collision_a87622ae46722faf9929bcd1b9d1183bd}{}\label{class_collision_a87622ae46722faf9929bcd1b9d1183bd}
+Returns overlap of the rectangle. \begin{DoxyReturn}{Returns}
+f\+Rect\+Overlap = Returns a rectangle overlap. 
+\end{DoxyReturn}
+\index{Collision@{Collision}!Intersects@{Intersects}}
+\index{Intersects@{Intersects}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{Intersects(\+Rectangle \&first\+A\+A\+B\+B, Rectangle \&other\+A\+A\+B\+B, std\+::string s\+A\+A\+B\+B)}{Intersects(Rectangle &firstAABB, Rectangle &otherAABB, std::string sAABB)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Collision\+::\+Intersects (
+\begin{DoxyParamCaption}
+\item[{{\bf Rectangle} \&}]{first\+A\+A\+BB, }
+\item[{{\bf Rectangle} \&}]{other\+A\+A\+BB, }
+\item[{std\+::string}]{s\+A\+A\+BB}
+\end{DoxyParamCaption}
+)}\hypertarget{class_collision_aa449054d324451f054a312479334f006}{}\label{class_collision_aa449054d324451f054a312479334f006}
+\hyperlink{class_collision}{Collision} test A\+A\+B\+B-\/\+A\+A\+BB. 
+\begin{DoxyParams}{Parameters}
+{\em first\+A\+A\+BB} & = First A\+A\+BB rectangle. \\
+\hline
+{\em other\+A\+A\+BB} & = Second A\+A\+BB rectangle. \\
+\hline
+{\em s\+A\+A\+BB} & = A variable with any name to avoid overloading the O\+BB checks. \\
+\hline
+\end{DoxyParams}
+\index{Collision@{Collision}!Intersects@{Intersects}}
+\index{Intersects@{Intersects}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{Intersects(\+Rectangle \&first, Rectangle \&other)}{Intersects(Rectangle &first, Rectangle &other)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Collision\+::\+Intersects (
+\begin{DoxyParamCaption}
+\item[{{\bf Rectangle} \&}]{first, }
+\item[{{\bf Rectangle} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_collision_afe374ad46bd824d5311a805771d74d4c}{}\label{class_collision_afe374ad46bd824d5311a805771d74d4c}
+\hyperlink{class_collision}{Collision} test O\+B\+B-\/\+O\+BB. 
+\begin{DoxyParams}{Parameters}
+{\em first} & = First O\+BB rectangle. \\
+\hline
+{\em other} & = Second O\+BB rectangle. \\
+\hline
+\end{DoxyParams}
+\index{Collision@{Collision}!Intersects@{Intersects}}
+\index{Intersects@{Intersects}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{Intersects(\+Rectangle \&first, Circle \&other)}{Intersects(Rectangle &first, Circle &other)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Collision\+::\+Intersects (
+\begin{DoxyParamCaption}
+\item[{{\bf Rectangle} \&}]{first, }
+\item[{{\bf Circle} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_collision_a437a8d88145b86b460cd60b432cc3e9e}{}\label{class_collision_a437a8d88145b86b460cd60b432cc3e9e}
+\hyperlink{class_collision}{Collision} test O\+B\+B-\/\+Circle. 
+\begin{DoxyParams}{Parameters}
+{\em first} & = An O\+BB rectangle. \\
+\hline
+{\em other} & = A circle. \\
+\hline
+\end{DoxyParams}
+\index{Collision@{Collision}!Intersects@{Intersects}}
+\index{Intersects@{Intersects}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{Intersects(\+Circle \&first, Circle \&other)}{Intersects(Circle &first, Circle &other)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Collision\+::\+Intersects (
+\begin{DoxyParamCaption}
+\item[{{\bf Circle} \&}]{first, }
+\item[{{\bf Circle} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_collision_a6bec285cd3ceab74dbbc8c861454a973}{}\label{class_collision_a6bec285cd3ceab74dbbc8c861454a973}
+\hyperlink{class_collision}{Collision} test O\+B\+B-\/\+Circle. 
+\begin{DoxyParams}{Parameters}
+{\em first} & = A first circle. \\
+\hline
+{\em other} & = A second circle. \\
+\hline
+\end{DoxyParams}
+\index{Collision@{Collision}!Update\+Combined\+Normals@{Update\+Combined\+Normals}}
+\index{Update\+Combined\+Normals@{Update\+Combined\+Normals}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{Update\+Combined\+Normals(std\+::vector$<$ sf\+::\+Vector2f $>$ \&first, std\+::vector$<$ sf\+::\+Vector2f $>$ \&other)}{UpdateCombinedNormals(std::vector< sf::Vector2f > &first, std::vector< sf::Vector2f > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}void Collision\+::\+Update\+Combined\+Normals (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ sf\+::\+Vector2f $>$ \&}]{first, }
+\item[{std\+::vector$<$ sf\+::\+Vector2f $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_collision_a447fe84c543fc402f1779d0771773878}{}\label{class_collision_a447fe84c543fc402f1779d0771773878}
+Updates normals of combined O\+BB rectangles. 
+\begin{DoxyParams}{Parameters}
+{\em first} & = Face normals of the first O\+BB rectangle. \\
+\hline
+{\em other} & = Face normals of the second O\+BB rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Collision@{Collision}!b\+Collision@{b\+Collision}}
+\index{b\+Collision@{b\+Collision}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{b\+Collision}{bCollision}}]{\setlength{\rightskip}{0pt plus 5cm}bool Collision\+::b\+Collision\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_collision_a80db9ae6bac2cd1f032d8b2c4d7a75c5}{}\label{class_collision_a80db9ae6bac2cd1f032d8b2c4d7a75c5}
+Confrim collision. \index{Collision@{Collision}!b\+Collision\+Axis\+Test@{b\+Collision\+Axis\+Test}}
+\index{b\+Collision\+Axis\+Test@{b\+Collision\+Axis\+Test}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{b\+Collision\+Axis\+Test}{bCollisionAxisTest}}]{\setlength{\rightskip}{0pt plus 5cm}bool Collision\+::b\+Collision\+Axis\+Test\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_collision_aa4a00832adce88fe922980cbaf0362a9}{}\label{class_collision_aa4a00832adce88fe922980cbaf0362a9}
+Confrim collision tests on axes. \index{Collision@{Collision}!collision\+Circ\+Normal@{collision\+Circ\+Normal}}
+\index{collision\+Circ\+Normal@{collision\+Circ\+Normal}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{collision\+Circ\+Normal}{collisionCircNormal}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Collision\+::collision\+Circ\+Normal\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_collision_aed4ea8e9cafeec9b67713c2948854ee4}{}\label{class_collision_aed4ea8e9cafeec9b67713c2948854ee4}
+\hyperlink{class_circle}{Circle} collision normal. \index{Collision@{Collision}!collision\+Rect\+Normal@{collision\+Rect\+Normal}}
+\index{collision\+Rect\+Normal@{collision\+Rect\+Normal}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{collision\+Rect\+Normal}{collisionRectNormal}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Collision\+::collision\+Rect\+Normal\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_collision_a1ccb2e8e575ead01b332a65338bc92fd}{}\label{class_collision_a1ccb2e8e575ead01b332a65338bc92fd}
+\hyperlink{class_rectangle}{Rectangle} collision normal. \index{Collision@{Collision}!f\+Circ\+Overlap@{f\+Circ\+Overlap}}
+\index{f\+Circ\+Overlap@{f\+Circ\+Overlap}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{f\+Circ\+Overlap}{fCircOverlap}}]{\setlength{\rightskip}{0pt plus 5cm}float Collision\+::f\+Circ\+Overlap\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_collision_a35cb18deca301a426db25a00eb2fd504}{}\label{class_collision_a35cb18deca301a426db25a00eb2fd504}
+\hyperlink{class_circle}{Circle} overlap. \index{Collision@{Collision}!f\+Rect\+Overlap@{f\+Rect\+Overlap}}
+\index{f\+Rect\+Overlap@{f\+Rect\+Overlap}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{f\+Rect\+Overlap}{fRectOverlap}}]{\setlength{\rightskip}{0pt plus 5cm}float Collision\+::f\+Rect\+Overlap\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_collision_a232bdb17411322d39be3dba8df18fe19}{}\label{class_collision_a232bdb17411322d39be3dba8df18fe19}
+\hyperlink{class_rectangle}{Rectangle} overlap. \index{Collision@{Collision}!m\+\_\+vect\+Maths@{m\+\_\+vect\+Maths}}
+\index{m\+\_\+vect\+Maths@{m\+\_\+vect\+Maths}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{m\+\_\+vect\+Maths}{m_vectMaths}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\+Maths} Collision\+::m\+\_\+vect\+Maths\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_collision_affb289a519ea7c61695ab74e11a82b5d}{}\label{class_collision_affb289a519ea7c61695ab74e11a82b5d}
+A variable which deals with vector maths. \index{Collision@{Collision}!normals\+Combined@{normals\+Combined}}
+\index{normals\+Combined@{normals\+Combined}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{normals\+Combined}{normalsCombined}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vector2f$>$ Collision\+::normals\+Combined\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_collision_aa3e126df67a5d939cfc0ec2ebac14cf5}{}\label{class_collision_aa3e126df67a5d939cfc0ec2ebac14cf5}
+Combined rectangle face normals. \index{Collision@{Collision}!overlaps@{overlaps}}
+\index{overlaps@{overlaps}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{overlaps}{overlaps}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Collision\+::overlaps\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_collision_a789d44569f105338d670feabc02bc2ce}{}\label{class_collision_a789d44569f105338d670feabc02bc2ce}
+Vector with overlaps from O\+BB tests. \index{Collision@{Collision}!reverse@{reverse}}
+\index{reverse@{reverse}!Collision@{Collision}}
+\subsubsection[{\texorpdfstring{reverse}{reverse}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Collision\+::reverse\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_collision_ad92247b56bd8dc65526bf9e740baa9d0}{}\label{class_collision_ad92247b56bd8dc65526bf9e740baa9d0}
+Vector with reverses from O\+BB tests. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{collision_8h}{collision.\+h}\end{DoxyCompactItemize}

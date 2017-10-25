@@ -1,0 +1,107 @@
+\hypertarget{class_font_loader}{}\section{Font\+Loader Class Reference}
+\label{class_font_loader}\index{Font\+Loader@{Font\+Loader}}
+
+
+This class is used to manage fonts.  
+
+
+
+
+{\ttfamily \#include $<$font\+Loader.\+h$>$}
+
+
+
+Collaboration diagram for Font\+Loader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_font_loader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_font_loader_a425b3451baedece1c0cbfa884dd0972a}{Font\+Loader} ()
+\item 
+void \hyperlink{class_font_loader_a47fd7f5d01ae1c5c687962c3d696f7e0}{set\+Base\+Directory} (std\+::string dir)
+\item 
+void \hyperlink{class_font_loader_ad78b54b629f95a5940779caa9914e8f7}{load} (std\+::vector$<$ std\+::string $>$ file\+Names)
+\item 
+sf\+::\+Font \& \hyperlink{class_font_loader_a9927072242d4d8c5b800a471527c9d93}{get\+Font} (int f\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ sf\+::\+Font $>$ \hyperlink{class_font_loader_abe3d75dec9d31a88cbfc889df83d2916}{fonts}
+\item 
+std\+::string \hyperlink{class_font_loader_af5430afdc542c29683315bb331e75efc}{base\+Directory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to manage fonts. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Font\+Loader@{Font\+Loader}!Font\+Loader@{Font\+Loader}}
+\index{Font\+Loader@{Font\+Loader}!Font\+Loader@{Font\+Loader}}
+\subsubsection[{\texorpdfstring{Font\+Loader()}{FontLoader()}}]{\setlength{\rightskip}{0pt plus 5cm}Font\+Loader\+::\+Font\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_font_loader_a425b3451baedece1c0cbfa884dd0972a}{}\label{class_font_loader_a425b3451baedece1c0cbfa884dd0972a}
+An initializer. 
+
+\subsection{Member Function Documentation}
+\index{Font\+Loader@{Font\+Loader}!get\+Font@{get\+Font}}
+\index{get\+Font@{get\+Font}!Font\+Loader@{Font\+Loader}}
+\subsubsection[{\texorpdfstring{get\+Font(int f\+Index)}{getFont(int fIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Font\& Font\+Loader\+::get\+Font (
+\begin{DoxyParamCaption}
+\item[{int}]{f\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_font_loader_a9927072242d4d8c5b800a471527c9d93}{}\label{class_font_loader_a9927072242d4d8c5b800a471527c9d93}
+Returns a font with said index. 
+\begin{DoxyParams}{Parameters}
+{\em f\+Index} & = Index of the font. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$it = Retruns pointer to the font with matching index. 
+\end{DoxyReturn}
+\index{Font\+Loader@{Font\+Loader}!load@{load}}
+\index{load@{load}!Font\+Loader@{Font\+Loader}}
+\subsubsection[{\texorpdfstring{load(std\+::vector$<$ std\+::string $>$ file\+Names)}{load(std::vector< std::string > fileNames)}}]{\setlength{\rightskip}{0pt plus 5cm}void Font\+Loader\+::load (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{file\+Names}
+\end{DoxyParamCaption}
+)}\hypertarget{class_font_loader_ad78b54b629f95a5940779caa9914e8f7}{}\label{class_font_loader_ad78b54b629f95a5940779caa9914e8f7}
+Loads fonts based on the string input. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Names} & = String vector with file names. \\
+\hline
+\end{DoxyParams}
+\index{Font\+Loader@{Font\+Loader}!set\+Base\+Directory@{set\+Base\+Directory}}
+\index{set\+Base\+Directory@{set\+Base\+Directory}!Font\+Loader@{Font\+Loader}}
+\subsubsection[{\texorpdfstring{set\+Base\+Directory(std\+::string dir)}{setBaseDirectory(std::string dir)}}]{\setlength{\rightskip}{0pt plus 5cm}void Font\+Loader\+::set\+Base\+Directory (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{dir}
+\end{DoxyParamCaption}
+)}\hypertarget{class_font_loader_a47fd7f5d01ae1c5c687962c3d696f7e0}{}\label{class_font_loader_a47fd7f5d01ae1c5c687962c3d696f7e0}
+Sets our base directory. 
+\begin{DoxyParams}{Parameters}
+{\em dir} & = Our base directory. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Font\+Loader@{Font\+Loader}!base\+Directory@{base\+Directory}}
+\index{base\+Directory@{base\+Directory}!Font\+Loader@{Font\+Loader}}
+\subsubsection[{\texorpdfstring{base\+Directory}{baseDirectory}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Font\+Loader\+::base\+Directory\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_font_loader_af5430afdc542c29683315bb331e75efc}{}\label{class_font_loader_af5430afdc542c29683315bb331e75efc}
+Our base directory with fonts. \index{Font\+Loader@{Font\+Loader}!fonts@{fonts}}
+\index{fonts@{fonts}!Font\+Loader@{Font\+Loader}}
+\subsubsection[{\texorpdfstring{fonts}{fonts}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Font$>$ Font\+Loader\+::fonts\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_font_loader_abe3d75dec9d31a88cbfc889df83d2916}{}\label{class_font_loader_abe3d75dec9d31a88cbfc889df83d2916}
+Vector of fonts. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{font_loader_8h}{font\+Loader.\+h}\end{DoxyCompactItemize}

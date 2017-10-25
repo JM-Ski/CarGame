@@ -1,0 +1,197 @@
+\hypertarget{class_rectangle}{}\section{Rectangle Class Reference}
+\label{class_rectangle}\index{Rectangle@{Rectangle}}
+
+
+This class is used to create an abstract base class of the rectangle.  
+
+
+
+
+{\ttfamily \#include $<$rectangle.\+h$>$}
+
+
+
+Inheritance diagram for Rectangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rectangle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rectangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_rectangle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}{Rectangle} ()
+\item 
+\hyperlink{class_rectangle_af7d678fca8036bea351850af59a75a35}{Rectangle} (const sf\+::\+Vector2f \&position, const sf\+::\+Vector2f \&dimensions)
+\item 
+\hyperlink{class_rectangle_af7899b9fa819743228eaacd41b79a77c}{Rectangle} (const sf\+::\+Vector2f \&position, const sf\+::\+Vector2f \&dimensions, const sf\+::\+Texture \&texture)
+\item 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \hyperlink{class_rectangle_ac1842f29ce2238f53aacb2027d7095b6}{get\+Normals} () const 
+\item 
+std\+::vector$<$ sf\+::\+Vertex $>$ \hyperlink{class_rectangle_ab8a7c003e34e8dfb8db4aafa2a76ea80}{get\+Global\+Vertices} () const 
+\item 
+void \hyperlink{class_rectangle_a8e9aa14262388a6dcaa4f7303b0ae9a7}{update\+Normals} (float rotation)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_rectangle_acc37caedf705dda800b5173caa09769d}{setup\+Local\+Vertices} ()
+\item 
+void \hyperlink{class_rectangle_aafbe42c32cdb58691faeb16d16c90f31}{update\+Global\+Vertices} (float rotation)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_rectangle_aa0d46e31bf4f23436c267b05b4404341}{f\+Deg\+To\+Rad}
+\begin{DoxyCompactList}\small\item\em (float)M\+\_\+\+PI / 180.\+f; \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \hyperlink{class_rectangle_aa51d214692884af3c403655d08d48076}{half\+Extents}
+\item 
+std\+::vector$<$ sf\+::\+Vertex $>$ \hyperlink{class_rectangle_a827fd01362a28eca0b1bb3f89c559d36}{local\+Vertices}
+\item 
+std\+::vector$<$ sf\+::\+Vertex $>$ \hyperlink{class_rectangle_a2231304da216c0c643bdffecdc514419}{global\+Vertices}
+\item 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \hyperlink{class_rectangle_ac94537e97b66a5d92a1919c99543c598}{normals}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to create an abstract base class of the rectangle. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{Rectangle()}{Rectangle()}}]{\setlength{\rightskip}{0pt plus 5cm}Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}{}\label{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}
+Initializer. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{Rectangle(const sf\+::\+Vector2f \&position, const sf\+::\+Vector2f \&dimensions)}{Rectangle(const sf::Vector2f &position, const sf::Vector2f &dimensions)}}]{\setlength{\rightskip}{0pt plus 5cm}Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{const sf\+::\+Vector2f \&}]{position, }
+\item[{const sf\+::\+Vector2f \&}]{dimensions}
+\end{DoxyParamCaption}
+)}\hypertarget{class_rectangle_af7d678fca8036bea351850af59a75a35}{}\label{class_rectangle_af7d678fca8036bea351850af59a75a35}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em position} & = Position of the rectangle. \\
+\hline
+{\em dimensions} & = Size of the rectangle \\
+\hline
+\end{DoxyParams}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{Rectangle(const sf\+::\+Vector2f \&position, const sf\+::\+Vector2f \&dimensions, const sf\+::\+Texture \&texture)}{Rectangle(const sf::Vector2f &position, const sf::Vector2f &dimensions, const sf::Texture &texture)}}]{\setlength{\rightskip}{0pt plus 5cm}Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{const sf\+::\+Vector2f \&}]{position, }
+\item[{const sf\+::\+Vector2f \&}]{dimensions, }
+\item[{const sf\+::\+Texture \&}]{texture}
+\end{DoxyParamCaption}
+)}\hypertarget{class_rectangle_af7899b9fa819743228eaacd41b79a77c}{}\label{class_rectangle_af7899b9fa819743228eaacd41b79a77c}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em position} & = Position of the rectangle. \\
+\hline
+{\em dimensions} & = Size of the rectangle. \\
+\hline
+{\em texture} & = Texture to load. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Rectangle@{Rectangle}!get\+Global\+Vertices@{get\+Global\+Vertices}}
+\index{get\+Global\+Vertices@{get\+Global\+Vertices}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{get\+Global\+Vertices() const }{getGlobalVertices() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vertex$>$ Rectangle\+::get\+Global\+Vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_rectangle_ab8a7c003e34e8dfb8db4aafa2a76ea80}{}\label{class_rectangle_ab8a7c003e34e8dfb8db4aafa2a76ea80}
+Returns global vertices of said rectangle. \begin{DoxyReturn}{Returns}
+global\+Vertices = Returns global vertices of the rectangle. 
+\end{DoxyReturn}
+\index{Rectangle@{Rectangle}!get\+Normals@{get\+Normals}}
+\index{get\+Normals@{get\+Normals}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{get\+Normals() const }{getNormals() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vector2f$>$ Rectangle\+::get\+Normals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_rectangle_ac1842f29ce2238f53aacb2027d7095b6}{}\label{class_rectangle_ac1842f29ce2238f53aacb2027d7095b6}
+Returns normals of said rectangle. \begin{DoxyReturn}{Returns}
+normals = Returns face normals of the rectangle. 
+\end{DoxyReturn}
+\index{Rectangle@{Rectangle}!setup\+Local\+Vertices@{setup\+Local\+Vertices}}
+\index{setup\+Local\+Vertices@{setup\+Local\+Vertices}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{setup\+Local\+Vertices()}{setupLocalVertices()}}]{\setlength{\rightskip}{0pt plus 5cm}void Rectangle\+::setup\+Local\+Vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_rectangle_acc37caedf705dda800b5173caa09769d}{}\label{class_rectangle_acc37caedf705dda800b5173caa09769d}
+One time setup of the local vertices. \index{Rectangle@{Rectangle}!update\+Global\+Vertices@{update\+Global\+Vertices}}
+\index{update\+Global\+Vertices@{update\+Global\+Vertices}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{update\+Global\+Vertices(float rotation)}{updateGlobalVertices(float rotation)}}]{\setlength{\rightskip}{0pt plus 5cm}void Rectangle\+::update\+Global\+Vertices (
+\begin{DoxyParamCaption}
+\item[{float}]{rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_rectangle_aafbe42c32cdb58691faeb16d16c90f31}{}\label{class_rectangle_aafbe42c32cdb58691faeb16d16c90f31}
+One time setup of the global vertices including rotation. \index{Rectangle@{Rectangle}!update\+Normals@{update\+Normals}}
+\index{update\+Normals@{update\+Normals}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{update\+Normals(float rotation)}{updateNormals(float rotation)}}]{\setlength{\rightskip}{0pt plus 5cm}void Rectangle\+::update\+Normals (
+\begin{DoxyParamCaption}
+\item[{float}]{rotation}
+\end{DoxyParamCaption}
+)}\hypertarget{class_rectangle_a8e9aa14262388a6dcaa4f7303b0ae9a7}{}\label{class_rectangle_a8e9aa14262388a6dcaa4f7303b0ae9a7}
+Updates face normals based on the given rotation. 
+\begin{DoxyParams}{Parameters}
+{\em rotation} & = Rotation needed so that normals can be updated whenever the rectangle rotates. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Rectangle@{Rectangle}!f\+Deg\+To\+Rad@{f\+Deg\+To\+Rad}}
+\index{f\+Deg\+To\+Rad@{f\+Deg\+To\+Rad}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{f\+Deg\+To\+Rad}{fDegToRad}}]{\setlength{\rightskip}{0pt plus 5cm}float Rectangle\+::f\+Deg\+To\+Rad\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_rectangle_aa0d46e31bf4f23436c267b05b4404341}{}\label{class_rectangle_aa0d46e31bf4f23436c267b05b4404341}
+
+
+(float)M\+\_\+\+PI / 180.\+f; 
+
+Formula converting degrees to radians. \index{Rectangle@{Rectangle}!global\+Vertices@{global\+Vertices}}
+\index{global\+Vertices@{global\+Vertices}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{global\+Vertices}{globalVertices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vertex$>$ Rectangle\+::global\+Vertices\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_rectangle_a2231304da216c0c643bdffecdc514419}{}\label{class_rectangle_a2231304da216c0c643bdffecdc514419}
+Global vertices of the rectangle. \index{Rectangle@{Rectangle}!half\+Extents@{half\+Extents}}
+\index{half\+Extents@{half\+Extents}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{half\+Extents}{halfExtents}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Rectangle\+::half\+Extents\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_rectangle_aa51d214692884af3c403655d08d48076}{}\label{class_rectangle_aa51d214692884af3c403655d08d48076}
+Half extents needed to declare vertices. \index{Rectangle@{Rectangle}!local\+Vertices@{local\+Vertices}}
+\index{local\+Vertices@{local\+Vertices}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{local\+Vertices}{localVertices}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vertex$>$ Rectangle\+::local\+Vertices\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_rectangle_a827fd01362a28eca0b1bb3f89c559d36}{}\label{class_rectangle_a827fd01362a28eca0b1bb3f89c559d36}
+Local vertices of the rectangle. \index{Rectangle@{Rectangle}!normals@{normals}}
+\index{normals@{normals}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{normals}{normals}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Vector2f$>$ Rectangle\+::normals\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_rectangle_ac94537e97b66a5d92a1919c99543c598}{}\label{class_rectangle_ac94537e97b66a5d92a1919c99543c598}
+Face normals of the rectangle. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{rectangle_8h}{rectangle.\+h}\end{DoxyCompactItemize}

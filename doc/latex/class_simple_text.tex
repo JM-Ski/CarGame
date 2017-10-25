@@ -1,0 +1,135 @@
+\hypertarget{class_simple_text}{}\section{Simple\+Text Class Reference}
+\label{class_simple_text}\index{Simple\+Text@{Simple\+Text}}
+
+
+This class is used to create a simple text on the screen.  
+
+
+
+
+{\ttfamily \#include $<$simple\+Text.\+h$>$}
+
+
+
+Inheritance diagram for Simple\+Text\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_simple_text__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simple\+Text\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_simple_text__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_text_a29eb48751b83c726a2c335da508a6c98}{Simple\+Text} ()
+\item 
+\hyperlink{class_simple_text_a00514cf0f7f4e59e2ff9a7ba1f5fac89}{Simple\+Text} (sf\+::\+Vector2f \&position, sf\+::\+Font \&font, int i\+Size, sf\+::\+String string, sf\+::\+Color colour)
+\item 
+void \hyperlink{class_simple_text_a3441ec9de9d722e8d2e9a6f32292a2d3}{update} (sf\+::\+View \&view, float f\+PosX, float f\+PosY)
+\item 
+sf\+::\+String \hyperlink{class_simple_text_a6438f399a14826f80a058a88736c7f1e}{get\+S\+F\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+String \hyperlink{class_simple_text_a0b9fdb31761f017d7ecd0a81d234f1b1}{s\+String}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to create a simple text on the screen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Simple\+Text@{Simple\+Text}!Simple\+Text@{Simple\+Text}}
+\index{Simple\+Text@{Simple\+Text}!Simple\+Text@{Simple\+Text}}
+\subsubsection[{\texorpdfstring{Simple\+Text()}{SimpleText()}}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Text\+::\+Simple\+Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_simple_text_a29eb48751b83c726a2c335da508a6c98}{}\label{class_simple_text_a29eb48751b83c726a2c335da508a6c98}
+Initializer. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_simple_text_a29eb48751b83c726a2c335da508a6c98_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Simple\+Text@{Simple\+Text}!Simple\+Text@{Simple\+Text}}
+\index{Simple\+Text@{Simple\+Text}!Simple\+Text@{Simple\+Text}}
+\subsubsection[{\texorpdfstring{Simple\+Text(sf\+::\+Vector2f \&position, sf\+::\+Font \&font, int i\+Size, sf\+::\+String string, sf\+::\+Color colour)}{SimpleText(sf::Vector2f &position, sf::Font &font, int iSize, sf::String string, sf::Color colour)}}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Text\+::\+Simple\+Text (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f \&}]{position, }
+\item[{sf\+::\+Font \&}]{font, }
+\item[{int}]{i\+Size, }
+\item[{sf\+::\+String}]{string, }
+\item[{sf\+::\+Color}]{colour}
+\end{DoxyParamCaption}
+)}\hypertarget{class_simple_text_a00514cf0f7f4e59e2ff9a7ba1f5fac89}{}\label{class_simple_text_a00514cf0f7f4e59e2ff9a7ba1f5fac89}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em position} & = A position on the screen. \\
+\hline
+{\em font} & = A font to load in. \\
+\hline
+{\em i\+Size} & = Size of the characters. \\
+\hline
+{\em string} & = A string to display. \\
+\hline
+{\em colour} & = Colour of the text. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Simple\+Text@{Simple\+Text}!get\+S\+F\+String@{get\+S\+F\+String}}
+\index{get\+S\+F\+String@{get\+S\+F\+String}!Simple\+Text@{Simple\+Text}}
+\subsubsection[{\texorpdfstring{get\+S\+F\+String()}{getSFString()}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+String Simple\+Text\+::get\+S\+F\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_simple_text_a6438f399a14826f80a058a88736c7f1e}{}\label{class_simple_text_a6438f399a14826f80a058a88736c7f1e}
+Returns a sfml string type. \begin{DoxyReturn}{Returns}
+s\+String 
+\end{DoxyReturn}
+\index{Simple\+Text@{Simple\+Text}!update@{update}}
+\index{update@{update}!Simple\+Text@{Simple\+Text}}
+\subsubsection[{\texorpdfstring{update(sf\+::\+View \&view, float f\+Pos\+X, float f\+Pos\+Y)}{update(sf::View &view, float fPosX, float fPosY)}}]{\setlength{\rightskip}{0pt plus 5cm}void Simple\+Text\+::update (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+View \&}]{view, }
+\item[{float}]{f\+PosX, }
+\item[{float}]{f\+PosY}
+\end{DoxyParamCaption}
+)}\hypertarget{class_simple_text_a3441ec9de9d722e8d2e9a6f32292a2d3}{}\label{class_simple_text_a3441ec9de9d722e8d2e9a6f32292a2d3}
+Updates the text. 
+\begin{DoxyParams}{Parameters}
+{\em view} & = A view that we will use to update our text position. \\
+\hline
+{\em f\+PosX} & = X position. You can add or subtract from the view.\+get\+Center().x. \\
+\hline
+{\em f\+PosY} & = Y position. You can add or subtract from the view.\+get\+Center().y. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Simple\+Text@{Simple\+Text}!s\+String@{s\+String}}
+\index{s\+String@{s\+String}!Simple\+Text@{Simple\+Text}}
+\subsubsection[{\texorpdfstring{s\+String}{sString}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+String Simple\+Text\+::s\+String\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_simple_text_a0b9fdb31761f017d7ecd0a81d234f1b1}{}\label{class_simple_text_a0b9fdb31761f017d7ecd0a81d234f1b1}
+A string type from sfml. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{simple_text_8h}{simple\+Text.\+h}\end{DoxyCompactItemize}

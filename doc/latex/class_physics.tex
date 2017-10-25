@@ -1,0 +1,289 @@
+\hypertarget{class_physics}{}\section{Physics Class Reference}
+\label{class_physics}\index{Physics@{Physics}}
+
+
+This class is used to create a simulation of movement.  
+
+
+
+
+{\ttfamily \#include $<$physics.\+h$>$}
+
+
+
+Collaboration diagram for Physics\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_physics__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_physics_a1a1b46dea83abe0c604a68e5445bc262}{Direction} \{ \hyperlink{class_physics_a1a1b46dea83abe0c604a68e5445bc262aee1222ec3203c2f189fb3d053b6ac4fc}{Positive}, 
+\hyperlink{class_physics_a1a1b46dea83abe0c604a68e5445bc262a4563248323abfa601d3f612cea15aab9}{Negative}, 
+\hyperlink{class_physics_a1a1b46dea83abe0c604a68e5445bc262afbf8fc5e7a2dab2acece07666c794ada}{None}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_physics_a4b2ebc0a344f04f48d227c72f0d0fbda}{Physics} ()
+\item 
+void \hyperlink{class_physics_a4191263a39bf65d69e90abe84801ea40}{update\+Physics} (float time\+Step)
+\item 
+void \hyperlink{class_physics_a74bcf0849c1fa84ac63b8b0a175cc886}{set\+Position} (sf\+::\+Vector2f \hyperlink{class_physics_a6087213b48f4754b6d69d94f0bc7606c}{position})
+\item 
+void \hyperlink{class_physics_ac7be95abda3d0c54bb8bb8f08854e2ae}{set\+Velocity} (sf\+::\+Vector2f new\+Vel)
+\item 
+void \hyperlink{class_physics_ad40c9ed00ca4051de0c94ac65405e700}{set\+Speed} (float f\+New\+Speed)
+\item 
+void \hyperlink{class_physics_ae5aef8654b224a3ea17cde032d8ea7b9}{set\+Mass} (float f\+New\+Mass)
+\item 
+void \hyperlink{class_physics_a123721942a1552796edd3c7c660779a2}{set\+Direction} (sf\+::\+Vector2f new\+Dir)
+\item 
+void \hyperlink{class_physics_a3869e0c4c8e23d5876f9b5b0cfdc7d2b}{set\+Friction} (sf\+::\+Vector2f new\+Fri)
+\item 
+void \hyperlink{class_physics_a659dfde50434b6fc3c70e51c06e1bca6}{set\+Angle} (float f\+New\+Angle)
+\item 
+sf\+::\+Vector2f \hyperlink{class_physics_aea92d796c2db1257df84dfed335a70fe}{get\+Position} () const 
+\item 
+sf\+::\+Vector2f \hyperlink{class_physics_a1f988396a60883b9a68b381f0210dfe0}{get\+Velocity} () const 
+\item 
+void \hyperlink{class_physics_a0122a4cac2428d85aa715ee5a6cb8170}{set\+Direction} (\hyperlink{class_physics_a1a1b46dea83abe0c604a68e5445bc262}{Direction} e\+Direction)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_physics_a1a1b46dea83abe0c604a68e5445bc262}{Direction} \hyperlink{class_physics_ab58bbe849c871adc33364138e6777971}{e\+Current\+Direction}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vector2f \hyperlink{class_physics_a6087213b48f4754b6d69d94f0bc7606c}{position}
+\item 
+sf\+::\+Vector2f \hyperlink{class_physics_ad8a150e8d89daeb6bcc0d3504b33b47d}{velocity}
+\item 
+sf\+::\+Vector2f \hyperlink{class_physics_ac40c58642c2fe90699cc49ac96501e2d}{friction}
+\item 
+sf\+::\+Vector2f \hyperlink{class_physics_a36bdbab2b563f5f5676f80780bec1207}{direction}
+\item 
+sf\+::\+Vector2f \hyperlink{class_physics_adc767d131b02d48ef12a87f9be293cb8}{rotation\+And\+Direction}
+\item 
+float \hyperlink{class_physics_a92809fe4df116f0a8c39ffd0c78ce25d}{f\+Speed}
+\item 
+float \hyperlink{class_physics_ac3484295b9b951d5a44105dd307f6043}{f\+Mass}
+\item 
+float \hyperlink{class_physics_a80e4f969bbf284b0ace8261527e4b232}{f\+Angle}
+\item 
+float \hyperlink{class_physics_af1307fcecb1d916f395ebcbcae254eb5}{f\+Deg\+To\+Rad}
+\begin{DoxyCompactList}\small\item\em (float)M\+\_\+\+PI / 180.\+f; \end{DoxyCompactList}\item 
+\hyperlink{class_vector_maths}{Vector\+Maths} \hyperlink{class_physics_a5ef3c448cb1b2c02522b3aa2c3bdc521}{m\+\_\+vect\+Maths}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to create a simulation of movement. 
+
+\subsection{Member Enumeration Documentation}
+\index{Physics@{Physics}!Direction@{Direction}}
+\index{Direction@{Direction}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{Direction}{Direction}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Physics\+::\+Direction}}\hypertarget{class_physics_a1a1b46dea83abe0c604a68e5445bc262}{}\label{class_physics_a1a1b46dea83abe0c604a68e5445bc262}
+The direction that our object faces. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Positive@{Positive}!Physics@{Physics}}\index{Physics@{Physics}!Positive@{Positive}}\item[{\em 
+Positive\hypertarget{class_physics_a1a1b46dea83abe0c604a68e5445bc262aee1222ec3203c2f189fb3d053b6ac4fc}{}\label{class_physics_a1a1b46dea83abe0c604a68e5445bc262aee1222ec3203c2f189fb3d053b6ac4fc}
+}]Positive direction = We are going down. \index{Negative@{Negative}!Physics@{Physics}}\index{Physics@{Physics}!Negative@{Negative}}\item[{\em 
+Negative\hypertarget{class_physics_a1a1b46dea83abe0c604a68e5445bc262a4563248323abfa601d3f612cea15aab9}{}\label{class_physics_a1a1b46dea83abe0c604a68e5445bc262a4563248323abfa601d3f612cea15aab9}
+}]Negative direction = We are going up. \index{None@{None}!Physics@{Physics}}\index{Physics@{Physics}!None@{None}}\item[{\em 
+None\hypertarget{class_physics_a1a1b46dea83abe0c604a68e5445bc262afbf8fc5e7a2dab2acece07666c794ada}{}\label{class_physics_a1a1b46dea83abe0c604a68e5445bc262afbf8fc5e7a2dab2acece07666c794ada}
+}]None = We are not moving. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Physics@{Physics}!Physics@{Physics}}
+\index{Physics@{Physics}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{Physics()}{Physics()}}]{\setlength{\rightskip}{0pt plus 5cm}Physics\+::\+Physics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_physics_a4b2ebc0a344f04f48d227c72f0d0fbda}{}\label{class_physics_a4b2ebc0a344f04f48d227c72f0d0fbda}
+An initializer. 
+
+\subsection{Member Function Documentation}
+\index{Physics@{Physics}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{get\+Position() const }{getPosition() const }}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Physics\+::get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_physics_aea92d796c2db1257df84dfed335a70fe}{}\label{class_physics_aea92d796c2db1257df84dfed335a70fe}
+Returns a position. \begin{DoxyReturn}{Returns}
+position = Returns a current position. 
+\end{DoxyReturn}
+\index{Physics@{Physics}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{get\+Velocity() const }{getVelocity() const }}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Physics\+::get\+Velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_physics_a1f988396a60883b9a68b381f0210dfe0}{}\label{class_physics_a1f988396a60883b9a68b381f0210dfe0}
+Returns a velocity. \begin{DoxyReturn}{Returns}
+velocity = Returns a current velocity. 
+\end{DoxyReturn}
+\index{Physics@{Physics}!set\+Angle@{set\+Angle}}
+\index{set\+Angle@{set\+Angle}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{set\+Angle(float f\+New\+Angle)}{setAngle(float fNewAngle)}}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+::set\+Angle (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+New\+Angle}
+\end{DoxyParamCaption}
+)}\hypertarget{class_physics_a659dfde50434b6fc3c70e51c06e1bca6}{}\label{class_physics_a659dfde50434b6fc3c70e51c06e1bca6}
+Sets an angle for physics simulation. 
+\begin{DoxyParams}{Parameters}
+{\em f\+New\+Angle} & = New angle. \\
+\hline
+\end{DoxyParams}
+\index{Physics@{Physics}!set\+Direction@{set\+Direction}}
+\index{set\+Direction@{set\+Direction}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{set\+Direction(sf\+::\+Vector2f new\+Dir)}{setDirection(sf::Vector2f newDir)}}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+::set\+Direction (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{new\+Dir}
+\end{DoxyParamCaption}
+)}\hypertarget{class_physics_a123721942a1552796edd3c7c660779a2}{}\label{class_physics_a123721942a1552796edd3c7c660779a2}
+Sets a direction for physics simulation. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Dir} & = New direction vector. \\
+\hline
+\end{DoxyParams}
+\index{Physics@{Physics}!set\+Direction@{set\+Direction}}
+\index{set\+Direction@{set\+Direction}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{set\+Direction(\+Direction e\+Direction)}{setDirection(Direction eDirection)}}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+::set\+Direction (
+\begin{DoxyParamCaption}
+\item[{{\bf Direction}}]{e\+Direction}
+\end{DoxyParamCaption}
+)}\hypertarget{class_physics_a0122a4cac2428d85aa715ee5a6cb8170}{}\label{class_physics_a0122a4cac2428d85aa715ee5a6cb8170}
+Sets a direction for the object. 
+\begin{DoxyParams}{Parameters}
+{\em e\+Direction} & = New direction. \\
+\hline
+\end{DoxyParams}
+\index{Physics@{Physics}!set\+Friction@{set\+Friction}}
+\index{set\+Friction@{set\+Friction}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{set\+Friction(sf\+::\+Vector2f new\+Fri)}{setFriction(sf::Vector2f newFri)}}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+::set\+Friction (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{new\+Fri}
+\end{DoxyParamCaption}
+)}\hypertarget{class_physics_a3869e0c4c8e23d5876f9b5b0cfdc7d2b}{}\label{class_physics_a3869e0c4c8e23d5876f9b5b0cfdc7d2b}
+Sets a friction for physics simulation. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Fri} & = New friction vector. \\
+\hline
+\end{DoxyParams}
+\index{Physics@{Physics}!set\+Mass@{set\+Mass}}
+\index{set\+Mass@{set\+Mass}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{set\+Mass(float f\+New\+Mass)}{setMass(float fNewMass)}}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+::set\+Mass (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+New\+Mass}
+\end{DoxyParamCaption}
+)}\hypertarget{class_physics_ae5aef8654b224a3ea17cde032d8ea7b9}{}\label{class_physics_ae5aef8654b224a3ea17cde032d8ea7b9}
+Sets a mass for physics simulation. 
+\begin{DoxyParams}{Parameters}
+{\em f\+New\+Mass} & = New mass. \\
+\hline
+\end{DoxyParams}
+\index{Physics@{Physics}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{set\+Position(sf\+::\+Vector2f position)}{setPosition(sf::Vector2f position)}}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+::set\+Position (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{position}
+\end{DoxyParamCaption}
+)}\hypertarget{class_physics_a74bcf0849c1fa84ac63b8b0a175cc886}{}\label{class_physics_a74bcf0849c1fa84ac63b8b0a175cc886}
+Sets a position for physics simulation. 
+\begin{DoxyParams}{Parameters}
+{\em position} & = New position vector. \\
+\hline
+\end{DoxyParams}
+\index{Physics@{Physics}!set\+Speed@{set\+Speed}}
+\index{set\+Speed@{set\+Speed}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{set\+Speed(float f\+New\+Speed)}{setSpeed(float fNewSpeed)}}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+::set\+Speed (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+New\+Speed}
+\end{DoxyParamCaption}
+)}\hypertarget{class_physics_ad40c9ed00ca4051de0c94ac65405e700}{}\label{class_physics_ad40c9ed00ca4051de0c94ac65405e700}
+Sets a speed for physics simulation. 
+\begin{DoxyParams}{Parameters}
+{\em f\+New\+Speed} & = New speed. \\
+\hline
+\end{DoxyParams}
+\index{Physics@{Physics}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{set\+Velocity(sf\+::\+Vector2f new\+Vel)}{setVelocity(sf::Vector2f newVel)}}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+::set\+Velocity (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{new\+Vel}
+\end{DoxyParamCaption}
+)}\hypertarget{class_physics_ac7be95abda3d0c54bb8bb8f08854e2ae}{}\label{class_physics_ac7be95abda3d0c54bb8bb8f08854e2ae}
+Sets a velocity for physics simulation. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Vel} & = New velocity vector. \\
+\hline
+\end{DoxyParams}
+\index{Physics@{Physics}!update\+Physics@{update\+Physics}}
+\index{update\+Physics@{update\+Physics}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{update\+Physics(float time\+Step)}{updatePhysics(float timeStep)}}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+::update\+Physics (
+\begin{DoxyParamCaption}
+\item[{float}]{time\+Step}
+\end{DoxyParamCaption}
+)}\hypertarget{class_physics_a4191263a39bf65d69e90abe84801ea40}{}\label{class_physics_a4191263a39bf65d69e90abe84801ea40}
+\hyperlink{class_physics}{Physics} update. 
+\begin{DoxyParams}{Parameters}
+{\em time\+Step} & = Time which updates most of the functions and variables, for example velocity. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Physics@{Physics}!direction@{direction}}
+\index{direction@{direction}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{direction}{direction}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Physics\+::direction\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_physics_a36bdbab2b563f5f5676f80780bec1207}{}\label{class_physics_a36bdbab2b563f5f5676f80780bec1207}
+A direction. \index{Physics@{Physics}!e\+Current\+Direction@{e\+Current\+Direction}}
+\index{e\+Current\+Direction@{e\+Current\+Direction}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{e\+Current\+Direction}{eCurrentDirection}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Direction} Physics\+::e\+Current\+Direction}\hypertarget{class_physics_ab58bbe849c871adc33364138e6777971}{}\label{class_physics_ab58bbe849c871adc33364138e6777971}
+Our current direction. \index{Physics@{Physics}!f\+Angle@{f\+Angle}}
+\index{f\+Angle@{f\+Angle}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{f\+Angle}{fAngle}}]{\setlength{\rightskip}{0pt plus 5cm}float Physics\+::f\+Angle\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_physics_a80e4f969bbf284b0ace8261527e4b232}{}\label{class_physics_a80e4f969bbf284b0ace8261527e4b232}
+An angle. \index{Physics@{Physics}!f\+Deg\+To\+Rad@{f\+Deg\+To\+Rad}}
+\index{f\+Deg\+To\+Rad@{f\+Deg\+To\+Rad}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{f\+Deg\+To\+Rad}{fDegToRad}}]{\setlength{\rightskip}{0pt plus 5cm}float Physics\+::f\+Deg\+To\+Rad\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_physics_af1307fcecb1d916f395ebcbcae254eb5}{}\label{class_physics_af1307fcecb1d916f395ebcbcae254eb5}
+
+
+(float)M\+\_\+\+PI / 180.\+f; 
+
+A conversion from degrees to radians. \index{Physics@{Physics}!f\+Mass@{f\+Mass}}
+\index{f\+Mass@{f\+Mass}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{f\+Mass}{fMass}}]{\setlength{\rightskip}{0pt plus 5cm}float Physics\+::f\+Mass\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_physics_ac3484295b9b951d5a44105dd307f6043}{}\label{class_physics_ac3484295b9b951d5a44105dd307f6043}
+A mass. \index{Physics@{Physics}!friction@{friction}}
+\index{friction@{friction}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{friction}{friction}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Physics\+::friction\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_physics_ac40c58642c2fe90699cc49ac96501e2d}{}\label{class_physics_ac40c58642c2fe90699cc49ac96501e2d}
+A friction. \index{Physics@{Physics}!f\+Speed@{f\+Speed}}
+\index{f\+Speed@{f\+Speed}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{f\+Speed}{fSpeed}}]{\setlength{\rightskip}{0pt plus 5cm}float Physics\+::f\+Speed\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_physics_a92809fe4df116f0a8c39ffd0c78ce25d}{}\label{class_physics_a92809fe4df116f0a8c39ffd0c78ce25d}
+A speed. \index{Physics@{Physics}!m\+\_\+vect\+Maths@{m\+\_\+vect\+Maths}}
+\index{m\+\_\+vect\+Maths@{m\+\_\+vect\+Maths}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{m\+\_\+vect\+Maths}{m_vectMaths}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\+Maths} Physics\+::m\+\_\+vect\+Maths\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_physics_a5ef3c448cb1b2c02522b3aa2c3bdc521}{}\label{class_physics_a5ef3c448cb1b2c02522b3aa2c3bdc521}
+A variable which deals with vector maths. \index{Physics@{Physics}!position@{position}}
+\index{position@{position}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{position}{position}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Physics\+::position\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_physics_a6087213b48f4754b6d69d94f0bc7606c}{}\label{class_physics_a6087213b48f4754b6d69d94f0bc7606c}
+A position. \index{Physics@{Physics}!rotation\+And\+Direction@{rotation\+And\+Direction}}
+\index{rotation\+And\+Direction@{rotation\+And\+Direction}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{rotation\+And\+Direction}{rotationAndDirection}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Physics\+::rotation\+And\+Direction\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_physics_adc767d131b02d48ef12a87f9be293cb8}{}\label{class_physics_adc767d131b02d48ef12a87f9be293cb8}
+A direction and rotation combined. \index{Physics@{Physics}!velocity@{velocity}}
+\index{velocity@{velocity}!Physics@{Physics}}
+\subsubsection[{\texorpdfstring{velocity}{velocity}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Physics\+::velocity\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_physics_ad8a150e8d89daeb6bcc0d3504b33b47d}{}\label{class_physics_ad8a150e8d89daeb6bcc0d3504b33b47d}
+A velocity. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{physics_8h}{physics.\+h}\end{DoxyCompactItemize}

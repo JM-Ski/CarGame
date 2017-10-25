@@ -1,0 +1,195 @@
+\hypertarget{class_player}{}\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+This class is used to create and control a player.  
+
+
+
+
+{\ttfamily \#include $<$player.\+h$>$}
+
+
+
+Inheritance diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_player__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_player__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player} ()
+\item 
+\hyperlink{class_player_af325f67103c14661d1dbc133bd066aad}{Player} (sf\+::\+Vector2f \&position, sf\+::\+Vector2f \&dimensions, sf\+::\+Texture \&texture)
+\item 
+void \hyperlink{class_player_a2adec8ca29f3ab52362174ccd1ed7d4d}{process\+Event} (sf\+::\+Event \&e)
+\item 
+void \hyperlink{class_player_a480140d0e89332be296673e63433c76a}{update} (float time\+Step)
+\item 
+void \hyperlink{class_player_afda87686c6028869242b8938fc98c936}{set\+Position\+Phys} (sf\+::\+Vector2f other)
+\item 
+void \hyperlink{class_player_ad0f9460e27f4d32e4326def511514688}{set\+Velocity\+Phys} (sf\+::\+Vector2f other)
+\item 
+sf\+::\+Vector2f \hyperlink{class_player_a2dbb7781b7ce5c32d3a0d0b4db2d2eb0}{get\+Velocity\+Phys} ()
+\item 
+void \hyperlink{class_player_a64f3efd0c43b7aa3138d532ff8dc615a}{reset\+Player} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_player_ab898f2f67f989df21804ecb72f4d25b1}{b\+Rotate\+Right}
+\item 
+bool \hyperlink{class_player_ae2fd38e391d041ade292c8fd2a417f4f}{b\+Rotate\+Left}
+\item 
+bool \hyperlink{class_player_ad00b7a7e4920b62e13c152a2374c66dd}{b\+Pressed\+Up}
+\item 
+bool \hyperlink{class_player_aa195c952c7b5f09f59ed32935c8ed111}{b\+Pressed\+Down}
+\item 
+\hyperlink{class_physics}{Physics} \hyperlink{class_player_adc5a0f2ba8dd25317f817e4f65de9cae}{m\+\_\+rect\+Physics}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is used to create and control a player. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{\texorpdfstring{Player()}{Player()}}]{\setlength{\rightskip}{0pt plus 5cm}Player\+::\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}
+Initializer. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{\texorpdfstring{Player(sf\+::\+Vector2f \&position, sf\+::\+Vector2f \&dimensions, sf\+::\+Texture \&texture)}{Player(sf::Vector2f &position, sf::Vector2f &dimensions, sf::Texture &texture)}}]{\setlength{\rightskip}{0pt plus 5cm}Player\+::\+Player (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f \&}]{position, }
+\item[{sf\+::\+Vector2f \&}]{dimensions, }
+\item[{sf\+::\+Texture \&}]{texture}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_af325f67103c14661d1dbc133bd066aad}{}\label{class_player_af325f67103c14661d1dbc133bd066aad}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em position} & = Position of the player. \\
+\hline
+{\em dimensions} & = Size of the player. \\
+\hline
+{\em texture} & = Texture to load. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Player@{Player}!get\+Velocity\+Phys@{get\+Velocity\+Phys}}
+\index{get\+Velocity\+Phys@{get\+Velocity\+Phys}!Player@{Player}}
+\subsubsection[{\texorpdfstring{get\+Velocity\+Phys()}{getVelocityPhys()}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Player\+::get\+Velocity\+Phys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_a2dbb7781b7ce5c32d3a0d0b4db2d2eb0}{}\label{class_player_a2dbb7781b7ce5c32d3a0d0b4db2d2eb0}
+Returns a velocity vector. \begin{DoxyReturn}{Returns}
+m\+\_\+rect\+Physics.\+get\+Velocity() = Returns a current velocity vector. 
+\end{DoxyReturn}
+\index{Player@{Player}!process\+Event@{process\+Event}}
+\index{process\+Event@{process\+Event}!Player@{Player}}
+\subsubsection[{\texorpdfstring{process\+Event(sf\+::\+Event \&e)}{processEvent(sf::Event &e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::process\+Event (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Event \&}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_a2adec8ca29f3ab52362174ccd1ed7d4d}{}\label{class_player_a2adec8ca29f3ab52362174ccd1ed7d4d}
+Process any key events. 
+\begin{DoxyParams}{Parameters}
+{\em e} & = Event variable needed to capture any key presses. \\
+\hline
+\end{DoxyParams}
+\index{Player@{Player}!reset\+Player@{reset\+Player}}
+\index{reset\+Player@{reset\+Player}!Player@{Player}}
+\subsubsection[{\texorpdfstring{reset\+Player()}{resetPlayer()}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::reset\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_a64f3efd0c43b7aa3138d532ff8dc615a}{}\label{class_player_a64f3efd0c43b7aa3138d532ff8dc615a}
+Resets player\textquotesingle{}s variables. \index{Player@{Player}!set\+Position\+Phys@{set\+Position\+Phys}}
+\index{set\+Position\+Phys@{set\+Position\+Phys}!Player@{Player}}
+\subsubsection[{\texorpdfstring{set\+Position\+Phys(sf\+::\+Vector2f other)}{setPositionPhys(sf::Vector2f other)}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::set\+Position\+Phys (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_afda87686c6028869242b8938fc98c936}{}\label{class_player_afda87686c6028869242b8938fc98c936}
+Sets a position of the player for physics. 
+\begin{DoxyParams}{Parameters}
+{\em other} & = New position vector. \\
+\hline
+\end{DoxyParams}
+\index{Player@{Player}!set\+Velocity\+Phys@{set\+Velocity\+Phys}}
+\index{set\+Velocity\+Phys@{set\+Velocity\+Phys}!Player@{Player}}
+\subsubsection[{\texorpdfstring{set\+Velocity\+Phys(sf\+::\+Vector2f other)}{setVelocityPhys(sf::Vector2f other)}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::set\+Velocity\+Phys (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_ad0f9460e27f4d32e4326def511514688}{}\label{class_player_ad0f9460e27f4d32e4326def511514688}
+Sets a velocity of the player for physics. 
+\begin{DoxyParams}{Parameters}
+{\em other} & = New velocity vector. \\
+\hline
+\end{DoxyParams}
+\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\subsubsection[{\texorpdfstring{update(float time\+Step)}{update(float timeStep)}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{time\+Step}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_a480140d0e89332be296673e63433c76a}{}\label{class_player_a480140d0e89332be296673e63433c76a}
+Updates the player. 
+\begin{DoxyParams}{Parameters}
+{\em time\+Step} & = Time which updates most of the functions and variables, for example velocity. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Player@{Player}!b\+Pressed\+Down@{b\+Pressed\+Down}}
+\index{b\+Pressed\+Down@{b\+Pressed\+Down}!Player@{Player}}
+\subsubsection[{\texorpdfstring{b\+Pressed\+Down}{bPressedDown}}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\+::b\+Pressed\+Down\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_player_aa195c952c7b5f09f59ed32935c8ed111}{}\label{class_player_aa195c952c7b5f09f59ed32935c8ed111}
+Confirmation to go down. \index{Player@{Player}!b\+Pressed\+Up@{b\+Pressed\+Up}}
+\index{b\+Pressed\+Up@{b\+Pressed\+Up}!Player@{Player}}
+\subsubsection[{\texorpdfstring{b\+Pressed\+Up}{bPressedUp}}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\+::b\+Pressed\+Up\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_player_ad00b7a7e4920b62e13c152a2374c66dd}{}\label{class_player_ad00b7a7e4920b62e13c152a2374c66dd}
+Confirmation to go up. \index{Player@{Player}!b\+Rotate\+Left@{b\+Rotate\+Left}}
+\index{b\+Rotate\+Left@{b\+Rotate\+Left}!Player@{Player}}
+\subsubsection[{\texorpdfstring{b\+Rotate\+Left}{bRotateLeft}}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\+::b\+Rotate\+Left\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_player_ae2fd38e391d041ade292c8fd2a417f4f}{}\label{class_player_ae2fd38e391d041ade292c8fd2a417f4f}
+Confirmation to rotate left. \index{Player@{Player}!b\+Rotate\+Right@{b\+Rotate\+Right}}
+\index{b\+Rotate\+Right@{b\+Rotate\+Right}!Player@{Player}}
+\subsubsection[{\texorpdfstring{b\+Rotate\+Right}{bRotateRight}}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\+::b\+Rotate\+Right\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_player_ab898f2f67f989df21804ecb72f4d25b1}{}\label{class_player_ab898f2f67f989df21804ecb72f4d25b1}
+Confirmation to rotate right. \index{Player@{Player}!m\+\_\+rect\+Physics@{m\+\_\+rect\+Physics}}
+\index{m\+\_\+rect\+Physics@{m\+\_\+rect\+Physics}!Player@{Player}}
+\subsubsection[{\texorpdfstring{m\+\_\+rect\+Physics}{m_rectPhysics}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Physics} Player\+::m\+\_\+rect\+Physics\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_player_adc5a0f2ba8dd25317f817e4f65de9cae}{}\label{class_player_adc5a0f2ba8dd25317f817e4f65de9cae}
+\hyperlink{class_physics}{Physics} for the player. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{player_8h}{player.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Player" name="Player">
+<area shape="rect" id="node2" href="$class_rectangle.html" title="This class is used to create an abstract base class of the rectangle. " alt="" coords="5,402,171,641"/>
+<area shape="rect" id="node4" href="$class_physics.html" title="This class is used to create a simulation of movement. " alt="" coords="195,336,341,707"/>
+<area shape="rect" id="node5" href="$class_vector_maths.html" title="This class is used to do simple vector calculations. " alt="" coords="187,5,349,273"/>
+</map>

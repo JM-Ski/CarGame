@@ -1,0 +1,230 @@
+\hypertarget{class_vector_maths}{}\section{Vector\+Maths Class Reference}
+\label{class_vector_maths}\index{Vector\+Maths@{Vector\+Maths}}
+
+
+This class is used to do simple vector calculations.  
+
+
+
+
+{\ttfamily \#include $<$vector\+Maths.\+h$>$}
+
+
+
+Collaboration diagram for Vector\+Maths\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_vector_maths__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector_maths_af14f2937b1a287972ae741082c63e6e2}{Vector\+Maths} ()
+\item 
+float \hyperlink{class_vector_maths_ac32142cb1d6a374e3808842c42aad1bf}{get\+Magnitude} (sf\+::\+Vector2f some\+Vector)
+\item 
+sf\+::\+Vector2f \hyperlink{class_vector_maths_a2958671bb1fabcaa012fa7a96764f0c3}{get\+Normalised\+Vector} (sf\+::\+Vector2f some\+Vector)
+\item 
+sf\+::\+Vector2f \hyperlink{class_vector_maths_abf04ac83d6af1aff50447fc3e9a510da}{rotation\+Matrix} (sf\+::\+Vector2f some\+Vector, float f\+Angle)
+\item 
+float \hyperlink{class_vector_maths_a53b54c300f657d8eb0859b9456c4fd40}{dot\+Product} (sf\+::\+Vector2f first, sf\+::\+Vector2f second)
+\item 
+sf\+::\+Vector2f \hyperlink{class_vector_maths_af669b52c8b757560e8c7d1af263acbf4}{set\+Position} (sf\+::\+Vector2f position, sf\+::\+Vector2f collision\+Normal, float f\+Overlap)
+\item 
+sf\+::\+Vector2f \hyperlink{class_vector_maths_a3e5d8270e32fb2985657e05ff20a3e57}{set\+Response} (sf\+::\+Vector2f velocity, sf\+::\+Vector2f collision\+Normal, float f\+Restitution)
+\item 
+sf\+::\+Vector2f \hyperlink{class_vector_maths_a100430d2798e19d383c68cae5f3a35ec}{zero} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_vector_maths_a500410fcab46699e06a8b7dadf56771d}{f\+Mag}
+\item 
+sf\+::\+Vector2f \hyperlink{class_vector_maths_a28a7d7f8fc60f6c0b35e7896a5ec48d5}{f\+Norm\+Vector}
+\item 
+sf\+::\+Vector2f \hyperlink{class_vector_maths_ae07f69982afee9ac9532c70e4bcde1d3}{rotation\+Mat}
+\item 
+float \hyperlink{class_vector_maths_a1f152ea5bd11ef07643bea0de8d2a75c}{f\+Dot}
+\item 
+sf\+::\+Vector2f \hyperlink{class_vector_maths_abc596252a016b278d89649aa84a788f6}{new\+Pos}
+\item 
+sf\+::\+Vector2f \hyperlink{class_vector_maths_a00513ada0f74184f044eb6fc35aa4a85}{new\+Vel}
+\item 
+sf\+::\+Vector2f \hyperlink{class_vector_maths_a701ff35f136062ae5e43b76e5f39c3e3}{empty\+Vector}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to do simple vector calculations. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Vector\+Maths@{Vector\+Maths}!Vector\+Maths@{Vector\+Maths}}
+\index{Vector\+Maths@{Vector\+Maths}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{Vector\+Maths()}{VectorMaths()}}]{\setlength{\rightskip}{0pt plus 5cm}Vector\+Maths\+::\+Vector\+Maths (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_maths_af14f2937b1a287972ae741082c63e6e2}{}\label{class_vector_maths_af14f2937b1a287972ae741082c63e6e2}
+Initializer. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_maths_af14f2937b1a287972ae741082c63e6e2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Vector\+Maths@{Vector\+Maths}!dot\+Product@{dot\+Product}}
+\index{dot\+Product@{dot\+Product}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{dot\+Product(sf\+::\+Vector2f first, sf\+::\+Vector2f second)}{dotProduct(sf::Vector2f first, sf::Vector2f second)}}]{\setlength{\rightskip}{0pt plus 5cm}float Vector\+Maths\+::dot\+Product (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{first, }
+\item[{sf\+::\+Vector2f}]{second}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vector_maths_a53b54c300f657d8eb0859b9456c4fd40}{}\label{class_vector_maths_a53b54c300f657d8eb0859b9456c4fd40}
+Calculates a dot product. 
+\begin{DoxyParams}{Parameters}
+{\em first} & = A first vector. \\
+\hline
+{\em second} & = A second vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+f\+Dot = Returns a dot product of two vectors. 
+\end{DoxyReturn}
+\index{Vector\+Maths@{Vector\+Maths}!get\+Magnitude@{get\+Magnitude}}
+\index{get\+Magnitude@{get\+Magnitude}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{get\+Magnitude(sf\+::\+Vector2f some\+Vector)}{getMagnitude(sf::Vector2f someVector)}}]{\setlength{\rightskip}{0pt plus 5cm}float Vector\+Maths\+::get\+Magnitude (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{some\+Vector}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vector_maths_ac32142cb1d6a374e3808842c42aad1bf}{}\label{class_vector_maths_ac32142cb1d6a374e3808842c42aad1bf}
+Calculates a magnitude of a vector. 
+\begin{DoxyParams}{Parameters}
+{\em some\+Vector} & = We will calculate magnitude of that vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+f\+Mag = Magnitude of a vector. 
+\end{DoxyReturn}
+\index{Vector\+Maths@{Vector\+Maths}!get\+Normalised\+Vector@{get\+Normalised\+Vector}}
+\index{get\+Normalised\+Vector@{get\+Normalised\+Vector}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{get\+Normalised\+Vector(sf\+::\+Vector2f some\+Vector)}{getNormalisedVector(sf::Vector2f someVector)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Vector\+Maths\+::get\+Normalised\+Vector (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{some\+Vector}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vector_maths_a2958671bb1fabcaa012fa7a96764f0c3}{}\label{class_vector_maths_a2958671bb1fabcaa012fa7a96764f0c3}
+Calculates a normalised vector. 
+\begin{DoxyParams}{Parameters}
+{\em some\+Vector} & = We will calculate unit vector of that vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+f\+Norm\+Vector = Returns a normalised vector. 
+\end{DoxyReturn}
+\index{Vector\+Maths@{Vector\+Maths}!rotation\+Matrix@{rotation\+Matrix}}
+\index{rotation\+Matrix@{rotation\+Matrix}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{rotation\+Matrix(sf\+::\+Vector2f some\+Vector, float f\+Angle)}{rotationMatrix(sf::Vector2f someVector, float fAngle)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Vector\+Maths\+::rotation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{some\+Vector, }
+\item[{float}]{f\+Angle}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vector_maths_abf04ac83d6af1aff50447fc3e9a510da}{}\label{class_vector_maths_abf04ac83d6af1aff50447fc3e9a510da}
+Calculates a rotation matrix. 
+\begin{DoxyParams}{Parameters}
+{\em some\+Vector} & = A vector to be used in rotation. \\
+\hline
+{\em f\+Angle} & = An angle at which we will rotate the vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+temp = Vector with applied matrix. 
+\end{DoxyReturn}
+\index{Vector\+Maths@{Vector\+Maths}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{set\+Position(sf\+::\+Vector2f position, sf\+::\+Vector2f collision\+Normal, float f\+Overlap)}{setPosition(sf::Vector2f position, sf::Vector2f collisionNormal, float fOverlap)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Vector\+Maths\+::set\+Position (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{position, }
+\item[{sf\+::\+Vector2f}]{collision\+Normal, }
+\item[{float}]{f\+Overlap}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vector_maths_af669b52c8b757560e8c7d1af263acbf4}{}\label{class_vector_maths_af669b52c8b757560e8c7d1af263acbf4}
+Reposition an object. 
+\begin{DoxyParams}{Parameters}
+{\em position} & = A position of the object we want apply new position to. \\
+\hline
+{\em collision\+Normal} & = A collision normal from the collision test. \\
+\hline
+{\em f\+Overlap} & = The smallest overlap from the collision test. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new\+Pos = Returns new position with applied changes. 
+\end{DoxyReturn}
+\index{Vector\+Maths@{Vector\+Maths}!set\+Response@{set\+Response}}
+\index{set\+Response@{set\+Response}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{set\+Response(sf\+::\+Vector2f velocity, sf\+::\+Vector2f collision\+Normal, float f\+Restitution)}{setResponse(sf::Vector2f velocity, sf::Vector2f collisionNormal, float fRestitution)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Vector\+Maths\+::set\+Response (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Vector2f}]{velocity, }
+\item[{sf\+::\+Vector2f}]{collision\+Normal, }
+\item[{float}]{f\+Restitution}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vector_maths_a3e5d8270e32fb2985657e05ff20a3e57}{}\label{class_vector_maths_a3e5d8270e32fb2985657e05ff20a3e57}
+\hyperlink{class_collision}{Collision} response. 
+\begin{DoxyParams}{Parameters}
+{\em velocity} & = A velocioty of the object we want apply response to. \\
+\hline
+{\em collision\+Normal} & = A collision normal from the collision test. \\
+\hline
+{\em f\+Restitution} & = Coeffcient of restitution. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new\+Vel = Returns new velocity with applied response. 
+\end{DoxyReturn}
+\index{Vector\+Maths@{Vector\+Maths}!zero@{zero}}
+\index{zero@{zero}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{zero()}{zero()}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Vector\+Maths\+::zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_vector_maths_a100430d2798e19d383c68cae5f3a35ec}{}\label{class_vector_maths_a100430d2798e19d383c68cae5f3a35ec}
+Vector2f (0.\+f, 0.\+f) . \begin{DoxyReturn}{Returns}
+empty\+Vel = Returns an empty vector. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Vector\+Maths@{Vector\+Maths}!empty\+Vector@{empty\+Vector}}
+\index{empty\+Vector@{empty\+Vector}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{empty\+Vector}{emptyVector}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Vector\+Maths\+::empty\+Vector\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vector_maths_a701ff35f136062ae5e43b76e5f39c3e3}{}\label{class_vector_maths_a701ff35f136062ae5e43b76e5f39c3e3}
+An empty vector. \index{Vector\+Maths@{Vector\+Maths}!f\+Dot@{f\+Dot}}
+\index{f\+Dot@{f\+Dot}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{f\+Dot}{fDot}}]{\setlength{\rightskip}{0pt plus 5cm}float Vector\+Maths\+::f\+Dot\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vector_maths_a1f152ea5bd11ef07643bea0de8d2a75c}{}\label{class_vector_maths_a1f152ea5bd11ef07643bea0de8d2a75c}
+Dot product. \index{Vector\+Maths@{Vector\+Maths}!f\+Mag@{f\+Mag}}
+\index{f\+Mag@{f\+Mag}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{f\+Mag}{fMag}}]{\setlength{\rightskip}{0pt plus 5cm}float Vector\+Maths\+::f\+Mag\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vector_maths_a500410fcab46699e06a8b7dadf56771d}{}\label{class_vector_maths_a500410fcab46699e06a8b7dadf56771d}
+Magnitude. \index{Vector\+Maths@{Vector\+Maths}!f\+Norm\+Vector@{f\+Norm\+Vector}}
+\index{f\+Norm\+Vector@{f\+Norm\+Vector}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{f\+Norm\+Vector}{fNormVector}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Vector\+Maths\+::f\+Norm\+Vector\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vector_maths_a28a7d7f8fc60f6c0b35e7896a5ec48d5}{}\label{class_vector_maths_a28a7d7f8fc60f6c0b35e7896a5ec48d5}
+Normalised vector. \index{Vector\+Maths@{Vector\+Maths}!new\+Pos@{new\+Pos}}
+\index{new\+Pos@{new\+Pos}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{new\+Pos}{newPos}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Vector\+Maths\+::new\+Pos\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vector_maths_abc596252a016b278d89649aa84a788f6}{}\label{class_vector_maths_abc596252a016b278d89649aa84a788f6}
+New position. \index{Vector\+Maths@{Vector\+Maths}!new\+Vel@{new\+Vel}}
+\index{new\+Vel@{new\+Vel}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{new\+Vel}{newVel}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Vector\+Maths\+::new\+Vel\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vector_maths_a00513ada0f74184f044eb6fc35aa4a85}{}\label{class_vector_maths_a00513ada0f74184f044eb6fc35aa4a85}
+New velocity. \index{Vector\+Maths@{Vector\+Maths}!rotation\+Mat@{rotation\+Mat}}
+\index{rotation\+Mat@{rotation\+Mat}!Vector\+Maths@{Vector\+Maths}}
+\subsubsection[{\texorpdfstring{rotation\+Mat}{rotationMat}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Vector\+Maths\+::rotation\+Mat\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vector_maths_ae07f69982afee9ac9532c70e4bcde1d3}{}\label{class_vector_maths_ae07f69982afee9ac9532c70e4bcde1d3}
+Rotation matrix. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{vector_maths_8h}{vector\+Maths.\+h}\end{DoxyCompactItemize}

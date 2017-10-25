@@ -1,0 +1,9 @@
+<map id="VectorMaths::VectorMaths" name="VectorMaths::VectorMaths">
+<area shape="rect" id="node2" href="$class_vector_maths.html#ac32142cb1d6a374e3808842c42aad1bf" title="VectorMaths::getMagnitude" alt="" coords="234,5,417,32"/>
+<area shape="rect" id="node3" href="$class_vector_maths.html#a2958671bb1fabcaa012fa7a96764f0c3" title="VectorMaths::getNormalised\lVector" alt="" coords="232,57,419,98"/>
+<area shape="rect" id="node4" href="$class_vector_maths.html#abf04ac83d6af1aff50447fc3e9a510da" title="VectorMaths::rotationMatrix" alt="" coords="234,123,417,149"/>
+<area shape="rect" id="node5" href="$class_vector_maths.html#a53b54c300f657d8eb0859b9456c4fd40" title="VectorMaths::dotProduct" alt="" coords="242,173,409,200"/>
+<area shape="rect" id="node6" href="$class_vector_maths.html#af669b52c8b757560e8c7d1af263acbf4" title="VectorMaths::setPosition" alt="" coords="241,224,410,251"/>
+<area shape="rect" id="node7" href="$class_vector_maths.html#a3e5d8270e32fb2985657e05ff20a3e57" title="VectorMaths::setResponse" alt="" coords="235,275,415,301"/>
+<area shape="rect" id="node8" href="$class_vector_maths.html#a100430d2798e19d383c68cae5f3a35ec" title="VectorMaths::zero" alt="" coords="261,325,390,352"/>
+</map>

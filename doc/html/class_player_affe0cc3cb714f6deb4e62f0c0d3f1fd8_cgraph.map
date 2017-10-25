@@ -1,0 +1,8 @@
+<map id="Player::Player" name="Player::Player">
+<area shape="rect" id="node2" href="$class_player.html#a2adec8ca29f3ab52362174ccd1ed7d4d" title="Player::processEvent" alt="" coords="166,5,311,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a480140d0e89332be296673e63433c76a" title="Player::update" alt="" coords="185,56,292,83"/>
+<area shape="rect" id="node4" href="$class_player.html#afda87686c6028869242b8938fc98c936" title="Player::setPositionPhys" alt="" coords="157,107,320,133"/>
+<area shape="rect" id="node5" href="$class_player.html#ad0f9460e27f4d32e4326def511514688" title="Player::setVelocityPhys" alt="" coords="157,157,320,184"/>
+<area shape="rect" id="node6" href="$class_player.html#a2dbb7781b7ce5c32d3a0d0b4db2d2eb0" title="Player::getVelocityPhys" alt="" coords="157,208,320,235"/>
+<area shape="rect" id="node7" href="$class_player.html#a64f3efd0c43b7aa3138d532ff8dc615a" title="Player::resetPlayer" alt="" coords="172,259,305,285"/>
+</map>

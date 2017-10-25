@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$class_rectangle.html" title="This class is used to create an abstract base class of the rectangle. " alt="" coords="171,107,251,133"/>
+<area shape="rect" id="node3" href="$class_checkpoint.html" title="This class is used to do create a simple checkpoint. " alt="" coords="315,5,401,32"/>
+<area shape="rect" id="node4" href="$class_player.html" title="This class is used to create and control a player. " alt="" coords="329,56,387,83"/>
+<area shape="rect" id="node5" href="$class_rectangle_trigger.html" title="This class is used to create a trigger. " alt="" coords="299,107,417,133"/>
+<area shape="rect" id="node6" href="$class_static_car.html" title="This class is used to create immovable cars. " alt="" coords="320,157,396,184"/>
+<area shape="rect" id="node7" href="$class_wall.html" title="This class is used to construct a wall. " alt="" coords="334,208,382,235"/>
+</map>

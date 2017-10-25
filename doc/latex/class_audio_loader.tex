@@ -1,0 +1,143 @@
+\hypertarget{class_audio_loader}{}\section{Audio\+Loader Class Reference}
+\label{class_audio_loader}\index{Audio\+Loader@{Audio\+Loader}}
+
+
+This class is used to manage audio.  
+
+
+
+
+{\ttfamily \#include $<$audio\+Loader.\+h$>$}
+
+
+
+Collaboration diagram for Audio\+Loader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_audio_loader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_audio_loader_a9fe737693de78ab56e73e256cb6474be}{Audio\+Loader} ()
+\item 
+void \hyperlink{class_audio_loader_a1c836fdf869fa42be7e7d15d52686cf6}{set\+Base\+Directory} (std\+::string dir)
+\item 
+void \hyperlink{class_audio_loader_ab7182e383a203504a6e8bbd7759088ce}{load} (std\+::vector$<$ std\+::string $>$ file\+Names)
+\item 
+void \hyperlink{class_audio_loader_a9d8509fa148b954bdac29316e84a26ba}{open} (std\+::vector$<$ std\+::string $>$ file\+Names)
+\item 
+sf\+::\+Sound\+Buffer \& \hyperlink{class_audio_loader_a8196533d566484ed144f209a41d4ede4}{get\+Sound\+Buffer} (int f\+Index)
+\item 
+sf\+::\+Music \& \hyperlink{class_audio_loader_adb279e55d3e23c58f8171307fa08180a}{get\+Music} (int f\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ sf\+::\+Sound\+Buffer $>$ \hyperlink{class_audio_loader_a000dca4eff031478c1cb39c5d911a5ea}{buffers}
+\item 
+std\+::array$<$ sf\+::\+Music, 2 $>$ \hyperlink{class_audio_loader_a9e04f423490a0ba4a270751de5dc8226}{musics}
+\item 
+std\+::string \hyperlink{class_audio_loader_ae6f0dc60b50135750cd8c311296affd3}{base\+Directory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to manage audio. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Audio\+Loader@{Audio\+Loader}!Audio\+Loader@{Audio\+Loader}}
+\index{Audio\+Loader@{Audio\+Loader}!Audio\+Loader@{Audio\+Loader}}
+\subsubsection[{\texorpdfstring{Audio\+Loader()}{AudioLoader()}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+Loader\+::\+Audio\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_audio_loader_a9fe737693de78ab56e73e256cb6474be}{}\label{class_audio_loader_a9fe737693de78ab56e73e256cb6474be}
+An initializer. 
+
+\subsection{Member Function Documentation}
+\index{Audio\+Loader@{Audio\+Loader}!get\+Music@{get\+Music}}
+\index{get\+Music@{get\+Music}!Audio\+Loader@{Audio\+Loader}}
+\subsubsection[{\texorpdfstring{get\+Music(int f\+Index)}{getMusic(int fIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Music\& Audio\+Loader\+::get\+Music (
+\begin{DoxyParamCaption}
+\item[{int}]{f\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_audio_loader_adb279e55d3e23c58f8171307fa08180a}{}\label{class_audio_loader_adb279e55d3e23c58f8171307fa08180a}
+Returns a music with said index. 
+\begin{DoxyParams}{Parameters}
+{\em f\+Index} & = Index of the font. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$it = Retruns pointer to the music with matching index. 
+\end{DoxyReturn}
+\index{Audio\+Loader@{Audio\+Loader}!get\+Sound\+Buffer@{get\+Sound\+Buffer}}
+\index{get\+Sound\+Buffer@{get\+Sound\+Buffer}!Audio\+Loader@{Audio\+Loader}}
+\subsubsection[{\texorpdfstring{get\+Sound\+Buffer(int f\+Index)}{getSoundBuffer(int fIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sound\+Buffer\& Audio\+Loader\+::get\+Sound\+Buffer (
+\begin{DoxyParamCaption}
+\item[{int}]{f\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_audio_loader_a8196533d566484ed144f209a41d4ede4}{}\label{class_audio_loader_a8196533d566484ed144f209a41d4ede4}
+Returns a buffer with said index. 
+\begin{DoxyParams}{Parameters}
+{\em f\+Index} & = Index of the font. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$it = Retruns pointer to the buffer with matching index. 
+\end{DoxyReturn}
+\index{Audio\+Loader@{Audio\+Loader}!load@{load}}
+\index{load@{load}!Audio\+Loader@{Audio\+Loader}}
+\subsubsection[{\texorpdfstring{load(std\+::vector$<$ std\+::string $>$ file\+Names)}{load(std::vector< std::string > fileNames)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+Loader\+::load (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{file\+Names}
+\end{DoxyParamCaption}
+)}\hypertarget{class_audio_loader_ab7182e383a203504a6e8bbd7759088ce}{}\label{class_audio_loader_ab7182e383a203504a6e8bbd7759088ce}
+Loads sounds based on the string input. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Names} & = String vector with file names. \\
+\hline
+\end{DoxyParams}
+\index{Audio\+Loader@{Audio\+Loader}!open@{open}}
+\index{open@{open}!Audio\+Loader@{Audio\+Loader}}
+\subsubsection[{\texorpdfstring{open(std\+::vector$<$ std\+::string $>$ file\+Names)}{open(std::vector< std::string > fileNames)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+Loader\+::open (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{file\+Names}
+\end{DoxyParamCaption}
+)}\hypertarget{class_audio_loader_a9d8509fa148b954bdac29316e84a26ba}{}\label{class_audio_loader_a9d8509fa148b954bdac29316e84a26ba}
+Opens music based on the string input. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Names} & = String vector with file names. \\
+\hline
+\end{DoxyParams}
+\index{Audio\+Loader@{Audio\+Loader}!set\+Base\+Directory@{set\+Base\+Directory}}
+\index{set\+Base\+Directory@{set\+Base\+Directory}!Audio\+Loader@{Audio\+Loader}}
+\subsubsection[{\texorpdfstring{set\+Base\+Directory(std\+::string dir)}{setBaseDirectory(std::string dir)}}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+Loader\+::set\+Base\+Directory (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{dir}
+\end{DoxyParamCaption}
+)}\hypertarget{class_audio_loader_a1c836fdf869fa42be7e7d15d52686cf6}{}\label{class_audio_loader_a1c836fdf869fa42be7e7d15d52686cf6}
+Sets our base directory. 
+\begin{DoxyParams}{Parameters}
+{\em dir} & = Our base directory. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Audio\+Loader@{Audio\+Loader}!base\+Directory@{base\+Directory}}
+\index{base\+Directory@{base\+Directory}!Audio\+Loader@{Audio\+Loader}}
+\subsubsection[{\texorpdfstring{base\+Directory}{baseDirectory}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Audio\+Loader\+::base\+Directory\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_audio_loader_ae6f0dc60b50135750cd8c311296affd3}{}\label{class_audio_loader_ae6f0dc60b50135750cd8c311296affd3}
+Our base directory with fonts. \index{Audio\+Loader@{Audio\+Loader}!buffers@{buffers}}
+\index{buffers@{buffers}!Audio\+Loader@{Audio\+Loader}}
+\subsubsection[{\texorpdfstring{buffers}{buffers}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$sf\+::\+Sound\+Buffer$>$ Audio\+Loader\+::buffers\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_audio_loader_a000dca4eff031478c1cb39c5d911a5ea}{}\label{class_audio_loader_a000dca4eff031478c1cb39c5d911a5ea}
+Vector of buffers. \index{Audio\+Loader@{Audio\+Loader}!musics@{musics}}
+\index{musics@{musics}!Audio\+Loader@{Audio\+Loader}}
+\subsubsection[{\texorpdfstring{musics}{musics}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<$sf\+::\+Music, 2$>$ Audio\+Loader\+::musics\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_audio_loader_a9e04f423490a0ba4a270751de5dc8226}{}\label{class_audio_loader_a9e04f423490a0ba4a270751de5dc8226}
+Vector of musics. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{audio_loader_8h}{audio\+Loader.\+h}\end{DoxyCompactItemize}
